@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Serhii Rodik](https://up.htmlacademy.ru/htmlcss/25/user/1051693).
-* Наставник: `Александр Уразаев`.
+* Наставник: [Aleksandr Urazaev](https://htmlacademy.ru/profile/urazaev).
 
 ---
 
