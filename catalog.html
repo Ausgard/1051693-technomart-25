@@ -6,24 +6,26 @@
 </head>
 <body>
 	<header class="main-header">
-  		<a href="index.html" class="logo"></a>
-			<img class="top-search" src="img/icon-search.png" alt="Поиск товаров">
+  		<a class="logo"></a>
+			<!--Иконка поиск-->
 			<form action="#" method="post">
-				<label>Поиск <input type="text" name="search"></label>
+				<label for="search">Поиск</label>
+				 <input type="text" name="search" id="search">
 			</form>
-			<p><a href="bookmark.html" class="bookmarks bookmarks-empty">Закладки<img class="bookmarks" src="img/icon-bookmark.png" alt="Ваши закладки"></a></p>
-			<p><a href="cart.html" class="cart cart-empty">Корзина<img class="cart" src="img/icon-cart.png" alt="Корзина с товарами"></a></p>
+			<!--Иконка закладки-->
+			<a href="bookmark.html" class="bookmarks bookmarks-empty">Закладки</a>
+			<!--Иконка корзины-->
+			<a href="cart.html" class="cart cart-empty">Корзина</a>
 			<a href="checkout.html" class="checkout">Оформить заказ</a>
 			<p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
-			<div class="phone">
-				<img src="img/icon-phone.png" alt="Наш телефон">
+			<div class="contacts">
+				<!--Иконка телефона-->
 				<p>+7(812)555-05-55</p>
+				<p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 			</div>
-			<p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-
 			<div class="sign-in">
-				<img src="img/icon-login.png" alt="" class="login">
-				<img src="img/icon-signed-in.png" alt="">
+				<!--Иконка логин-->
+				<!--Иконка вход-->
 				<p>Равшан Джамшутович</p>
 				<a href="my-orders.html">Мои заказы</a>
 				<p class="separator">.</p>
@@ -82,7 +84,7 @@
 					<p class="item-old-price">22500 р.</p>
 					<a href="bosch-bfg-3000.html" class="catalog-item-btn"></a>
       		<button type="submit" class="add-bookmarks">В закладки</button>
-					<img src="img/icon-cart.png" class="catalog-item-cart" alt="">
+					<!--Иконка корзины-->
 					<a href="cart.html" class="one-click-buy">Купить</a>
       	</div>
 
@@ -93,7 +95,7 @@
 					<p class="item-old-price">30500 р.</p>
 					<a href="bosch-bfg-6000.html" class="catalog-item-btn"></a>
 					<button type="submit" class="add-bookmarks">В закладки</button>
-					<img src="img/icon-cart.png" class="catalog-item-cart" alt="">
+					<!--Иконка корзины-->
 					<a href="cart.html" class="one-click-buy">Купить</a>
       	</div>
 
@@ -104,39 +106,39 @@
 					<p class="item-old-price">30500 р.</p>
 					<a href="bosch-bfg-2000.html" class="catalog-item-btn"></a>
 					<button type="submit" class="add-bookmarks">В закладки</button>
-					<img src="img/icon-cart.png" class="catalog-item-cart" alt="">
+					<!--Иконка корзины-->
 					<a href="cart.html" class="one-click-buy">Купить</a>
       	</div>
       </section>
   	</main>
-	  	<footer>
-	  		<section class="footer-nav">
-	  			<img src="img/logo.png" alt="Техномарт - нтернет-магазин строительных материалов и инструментов для ремонта" class="logo">
-					<ul>
-						<li><a href="about-us.html">Компания</a></li>
-						<li><a href="news.html">Новости</a></li>
-						<li><a href="catalog.html">Каталог</a></li>
-						<li><a href="delivery.html">Доставка</a></li>
-						<li><a href="contacts.html">Контакты</a></li>
-					</ul>
-					<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55</p>
-					<ul class="goods-sections">
-						<li><a href="materials.html">Материалы</a></li>
-						<li><a href="equipment.html">Техника</a></li>
-						<li><a href="tool.html">Инструмент</a></li>
-						<li><a href="special-offers.html">Спецпредложения</a></li>
-					</ul>			
-	  		</section>
-	  			<p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
-	  		<ul class="social">
-	  			<li><a href="#"><img src="img/vk.png" alt="сделать репост вконтакте"></a></li>
-	  			<li><a href="#"><img src="img/facebook.png" alt="сделать репост в фейсбук"></a></li>
-	  			<li><a href="#"><img src="img/instagram.png" alt="сделать репост в инстаграм"></a></li>
-	  		</ul>
-	  			<p>Обратная связь:</p>
-	  			<a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-	  			<p>Разработано —</p>
-	  			<a href="htmlacademy.ru">htmlacademy.ru</a>
-	  	</footer>
+		<footer>
+			<section class="footer-nav">
+				<a class="logo">Техномарт</a>
+				<ul>
+					<li><a href="about-us.html">Компания</a></li>
+					<li><a href="news.html">Новости</a></li>
+					<li><a href="catalog.html">Каталог</a></li>
+					<li><a href="delivery.html">Доставка</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+				</ul>
+				<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55</p>
+				<ul class="goods-sections">
+					<li><a href="materials.html">Материалы</a></li>
+					<li><a href="equipment.html">Техника</a></li>
+					<li><a href="tool.html">Инструмент</a></li>
+					<li><a href="special-offers.html">Спецпредложения</a></li>
+				</ul>			
+			</section>
+				<p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
+			<ul class="social">
+				<li><!--Иконка соцсети--></li>
+				<li><!--Иконка соцсети--></li>
+				<li><!--Иконка соцсети--></li>
+			</ul>
+				<p>Обратная связь:</p>
+				<a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+				<p>Разработано —</p>
+				<a href="htmlacademy.ru">htmlacademy.ru</a>
+		</footer>
 </body>
 </html>
