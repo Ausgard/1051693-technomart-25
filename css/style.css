@@ -1,0 +1,100 @@
+.main-header > .bookmarks, .cart, .checkout, .main-nav a {
+	font-family: 'Cuprum', sans-serif;
+	font-size: 17px;
+	font-style: regular;
+	color: #fff;
+	text-decoration: none;
+}
+
+.main-header h1 {
+	font-family: 'Cuprum', sans-serif;
+	font-size: 16px;
+	font-style: italic;
+	color: #ee3643;
+}
+
+.our-contacts p {
+	font-family: 'Cuprum', sans-serif;
+	font-size: 14px;
+	font-style: regular;
+	color: #32425c;
+}
+
+.our-contacts > .phone {
+	font-family: 'Cuprum', sans-serif;
+	font-size: 21px;
+	font-style: regular;
+	color: #ee3643;
+}
+
+.sign-in > .login, .registration {
+	font-family: 'Cuprum', sans-serif;
+	font-size: 21px;
+	font-style: regular;
+	color: #000;
+}
+
+.about h2, .contacts h2 {
+	font-family: 'Cuprum', sans-serif;
+	font-size: 30px;
+	font-style: regular;
+	color: #000;
+	text-transform: uppercase;
+}
+
+.about p, .contacts p {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 13px;
+	font-style: regular;
+	color: #000;
+}
+
+.about > ul > li {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 18px;
+	font-style: regular;
+	color: #000;
+	font-weight: 500;
+}
+
+.about a {
+	font-family: 'Cuprum', sans-serif;
+	font-size: 14px;
+	font-style: regular;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.contacts > .mail {
+	font-family: 'Cuprum', sans-serif;
+	font-size: 14px;
+	font-style: regular;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.footer-contacts, .copyright, .footer-nav a {
+	font-family: 'Cuprum', sans-serif;
+	font-size: 18px;
+	font-style: regular;
+	color: #fff;
+	text-decoration: none;
+}
+
+.copyright {
+	font-size: 16px;
+}
+
+.copyright a {
+	font-family: 'Cuprum', sans-serif;
+	font-size: 16px;
+	font-style: regular;
+	color: #ffd180;
+	text-decoration: none;
+}
+
+.goods-sections a {
+	color: #ffda96;
+}
