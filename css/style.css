@@ -12,11 +12,23 @@
 	text-decoration: inherit;
 }
 
+ .checkout {
+ 	display: block;
+  width: 150px;
+  height: 42px;
+  color: #ffffff;
+	background-color: #63a63e;
+	text-align: center;
+
+}
+
+
 .main-header h1 {
 	font-family: "Cuprum", "Arial", serif;
 	font-size: 16px;
 	line-height: 23px;
 	font-style: italic;
+	font-weight: 400;
 	color: #ee3643;
 }
 
@@ -24,19 +36,23 @@
 	font-family: "Cuprum", "Arial", serif;
 	font-size: 14px;
 	line-height: 24px;
+	font-weight: 300;
 	color: #32425c;
 }
 
-.our-contacts > .phone {
+p.phone {
 	font-family: "Cuprum", "Arial", serif;
 	font-size: 21px;
 	line-height: 21px;
 	color: #ee3643;
+	font-weight: 600;
 }
 
-.sign-in > a {
+.sign-in a {
 	font-family: "Cuprum", "Arial", serif;
 	font-size: 21px;
+	line-height: 21px;
+	font-weight: 400;
 	color: #000000;
 	text-decoration: none;
 }
@@ -44,21 +60,28 @@
 .about h2, .contacts h2 {
 	font-family: "Cuprum", "Arial", serif;
 	font-size: 30px;
+	line-height: 30px;
+	font-weight: 300;
 	color: #000000;
 	text-transform: uppercase;
+	font-weight: normal;
 }
 
 .about p, .contacts p {
 	 font-family: "PT Sans", "Arial", serif;
 	font-size: 13px;
+	line-height: 24px;
+	font-weight: 300;
 	color: #000000;
 }
 
-.about > ul > li {
-	font-family: "PT Sans", "Arial", serif;
+.about li {
+	font-family: "Cuprum", "Arial", serif;
 	font-size: 18px;
+	line-height: 20px;
+	font-weight: 300;
+	font-style: normal;
 	color: #000000;
-	font-weight: 500;
 }
 
 .about a {
@@ -82,12 +105,38 @@ footer > section ul {
 }
 
 .footer-nav, .footer-contacts {
+	font-family: "Cuprum", "Arial", serif;
 	background-color: #32425c;
+	color: #ffffff;
+	font-style: normal;
+	line-height: 24px;
+	font-size: 18px;
+}
+
+.footer-nav a {
+	font-family: "Cuprum", "Arial", serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-style: normal;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.goods-sections a {
+  color: #ffd180;
+  font-style: normal;
+  line-height: 18px;
+  font-size: 16px;
 }
 
 .footer-copyright {
+	font-family: "Cuprum", "Arial", serif;
 	font-size: 16px;
+	line-height: 18px;
+	font-style: normal;
+	color: #ffffff;
 	background-color: #293449;
+	text-decoration: none;
 }
 
 .footer-copyright a {
@@ -95,17 +144,4 @@ footer > section ul {
 	font-size: 16px;
 	color: #ffd180;
 	text-decoration: none;
-}
-
-.footer-contacts, .footer-copyright, .footer-nav a {
-	font-family: "Cuprum", "Arial", serif;
-	font-size: 18px;
-	color: #ffffff;
-	text-decoration: none;
-}
-
-
-
-.goods-sections a {
-	color: #ffda96;
 }
