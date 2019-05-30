@@ -2,7 +2,7 @@
 	font-family: "Cuprum", "Arial", serif;
 	font-size: 17px;
 	line-height: 18px;
-	font-weight: 400;
+	font-weight: normal;
 	font-style: normal;
 	color: #ffffff;
 	text-decoration: none;
@@ -186,7 +186,7 @@ input[type=search]:focus {
 	font-family: "Cuprum", "Arial", serif;
 	font-size: 14px;
 	line-height: 24px;
-	font-weight: 300;
+	font-weight: normal;
 	color: #32425c;
 }
 
@@ -194,8 +194,9 @@ p.phone {
 	font-family: "Cuprum", "Arial", serif;
 	font-size: 21px;
 	line-height: 21px;
-	color: #ee3643;
-	font-weight: 600;
+	font-weight: normal;
+	color: #e9292a;
+
 }
 
 .sign-in a {
@@ -232,6 +233,7 @@ p.phone {
 	background-image: url(../img/icon-user.svg);
 	background-repeat: no-repeat;
 	background-position: 13px;
+	display: inline-block;
 
 }
 
@@ -240,6 +242,7 @@ p.phone {
 	background-image: url(../img/icon-logout.svg);
 	background-repeat: no-repeat;
 	background-position: 20px;
+	display: inline-block;
 
 }
 
@@ -310,6 +313,132 @@ a.my-orders, a.my-account {
 .main-nav a:active {
   background: #1d2739;
 }
+.bread-crumbs {
+	display: inline-block;
+	height: 100%;
+	padding: 0px;
+
+}
+.bread-crumbs ul {
+	margin: 23px 0px 24px 0px;
+}
+
+.bread-crumbs li {
+	list-style: none;
+	display: inline-block;
+}
+
+.bread-crumbs a {
+	padding: 0px 17px;
+	font-family: "PT Sans", "Arial", serif;
+	font-size: 13px;
+	line-height: 18px;
+	text-align: left;
+	color: #000000;
+	text-decoration: none;
+	background-image: url(../img/icon-right-small.svg);
+	background-repeat: no-repeat;
+	background-position: 0% 50%;
+
+}
+
+.bread-crumbs li:nth-of-type(1)::before {
+	content: "";
+	background-image: url(../img/icon-home.svg);
+	background-repeat: no-repeat;
+	width: 14px;
+	height: 12px;
+	display: inline-block;
+	padding: 0px 15px 0px 0px;
+}
+
+	h1 {
+  font-family: "Cuprum", "Arial", serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  font-style: normal;
+  color: #32425c;
+  background-color: #f2f6f8;
+  padding: 32px 0px 34px 30px;
+}
+	
+	h3  {
+	font-family: "PT Sans", "Arial", serif;
+	font-size: 17px;
+	font-weight: bold;
+	font-style: normal;
+	line-height: 30px;
+	letter-spacing: 0.2px;
+	text-align: left;
+	color: #000000;
+}
+
+.supply label, .manufacturer label {
+	font-family: "PT Sans", "Arial", serif;
+	font-size: 15px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 20px;
+	letter-spacing: normal;
+	text-align: left;
+	color: #000000;
+}
+
+.filters input[type=checkbox] {
+  display: none;
+}
+
+.manufacturer input[type=checkbox] + label::before {
+  content: "";
+  background-image: url(../img/checkbox-off.svg);
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 23px;
+  display: block;
+  background-position: 50% 50%;
+  padding: 20px 8px 17px 0px;
+}
+
+.manufacturer input[type=checkbox]:checked + label::before {
+  content: "";
+  background-image: url(../img/checkbox-on.svg);
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 23px;
+  display: block;
+  background-position: 50% 50%;
+  padding: 20px 8px 17px 0px;
+}
+
+/*.filters input[type=checkbox] + label:hover::before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  top: -4px;
+  left: 0;
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -54px -145px;
+}*/
+
+/*.filters input[type=checkbox]:checked + label:hover::after {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  top: -4px;
+  left: 0;
+  background: url(../img/sprite.png) no-repeat;
+  background-position: 0 -146px;
+}*/
+
+
+
+
+
+
 
 .about h2, .contacts h2 {
 	font-family: "Cuprum", "Arial", serif;
@@ -343,7 +472,7 @@ a.my-orders, a.my-account {
 }
 
 .about p, .contacts p {
-	 font-family: "PT Sans", "Arial", serif;
+	font-family: "PT Sans", "Arial", serif;
 	font-size: 13px;
 	line-height: 24px;
 	font-weight: 300;
