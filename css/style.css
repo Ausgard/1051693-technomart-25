@@ -390,55 +390,41 @@ a.my-orders, a.my-account {
   display: none;
 }
 
-.manufacturer input[type=checkbox] + label::before {
-  content: "";
-  background-image: url(../img/checkbox-off.svg);
-  background-repeat: no-repeat;
-  width: 23px;
-  height: 23px;
-  display: block;
-  background-position: 50% 50%;
-  padding: 20px 8px 17px 0px;
+.filters input[type=checkbox] + label::before {
+	content: "";
+	background-repeat: no-repeat;
+	width: 23px;
+	height: 23px;
+	display: block;
+	background-position: 50% 50%;
+	padding: 20px 8px 17px 0px;
 }
 
 .manufacturer input[type=checkbox]:checked + label::before {
-  content: "";
-  background-image: url(../img/checkbox-on.svg);
-  background-repeat: no-repeat;
-  width: 23px;
-  height: 23px;
-  display: block;
-  background-position: 50% 50%;
-  padding: 20px 8px 17px 0px;
+	content: "";
+	background-repeat: no-repeat;
+	width: 23px;
+	height: 23px;
+	display: block;
+	background-position: 50% 50%;
+	padding: 20px 8px 17px 0px;
 }
 
-/*.filters input[type=checkbox] + label:hover::before {
-  content: "";
-  position: absolute;
-  width: 26px;
-  height: 26px;
-  top: -4px;
-  left: 0;
-  background: url(../img/sprite.png) no-repeat;
-  background-position: -54px -145px;
-}*/
+.manufacturer input[type=checkbox] + label::before {
+  background-image: url(../img/checkbox-off.svg);
+}
 
-/*.filters input[type=checkbox]:checked + label:hover::after {
-  content: "";
-  position: absolute;
-  width: 26px;
-  height: 26px;
-  top: -4px;
-  left: 0;
-  background: url(../img/sprite.png) no-repeat;
-  background-position: 0 -146px;
-}*/
+.manufacturer input[type=checkbox]:checked + label::before {
+  background-image: url(../img/checkbox-on.svg);
+}
 
+.supply input[type=checkbox] + label::before {
+  background-image: url(../img/radio-off.svg);
+}
 
-
-
-
-
+.supply input[type=checkbox]:checked + label::before {
+  background-image: url(../img/radio-on.svg);
+}
 
 .about h2, .contacts h2 {
 	font-family: "Cuprum", "Arial", serif;
