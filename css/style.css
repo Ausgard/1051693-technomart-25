@@ -426,6 +426,164 @@ a.my-orders, a.my-account {
   background-image: url(../img/radio-on.svg);
 }
 
+.manufacturer input[type=checkbox] + label:hover::before, .manufacturer input[type=checkbox] + label:active::before {
+  background-image: url(../img/checkbox-off-hover.svg);
+}
+
+.manufacturer input[type=checkbox]:checked + label:hover::before, .manufacturer input[type=checkbox]:checked + label:active::before {
+  background-image: url(../img/checkbox-on-hover.svg);
+}
+
+.supply input[type=checkbox] + label:hover::before, .supply input[type=checkbox] + label:active::before {
+  background-image: url(../img/radio-off-hover.svg);
+}
+
+.supply input[type=checkbox]:checked + label:hover::before, .supply input[type=checkbox]:checked + label:active::before {
+  background-image: url(../img/radio-on-hover.svg);
+}
+
+.supply input[type=checkbox] + label:disabled::before {
+	opacity: 0.3;
+
+}
+
+
+.filters button[type="submit"] {
+	font-family: "PT Sans", "Arial", serif;
+	font-size: 13px;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 18px;
+	text-align: center;
+	color: #000000;
+	background-color: #ffffff;
+	border: solid 1px #e5e5e5;
+	padding: 9px 43px;
+}
+
+.catalog-item {
+	width: 218px;
+	height: 316px;
+	background-color: #ffffff;
+	border: solid 1px #e5e5e5;
+	font-family: "PT Sans", "Arial", serif;
+	font-size: 18px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 20px;
+	letter-spacing: normal;
+	text-align: center;
+	color: #000000;
+}
+
+.catalog-item:hover {
+	box-shadow: 0px 10px 25px 0 #29344980;
+}
+
+.catalog-item a {
+	text-decoration: none;
+}
+
+.catalog-item-btn {
+	display: block;
+	font-size: 17px;
+	line-height: 18px;
+	color: #ffffff;
+	background-image: url(../img/red-button.svg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	padding: 10px 41px 10px 37px;
+	margin: 43px 35px 21px 42px;
+
+}
+
+ a.item-title {
+ 	display: block;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+  margin: 0px 33px 0px 32px;
+}
+
+.item-old-price {
+	display: none;
+}
+
+.catalog-item:hover > img {
+	display: none;
+}
+
+.catalog-item:hover > .one-click-buy, .catalog-item:hover > .add-bookmarks {
+	display: block;
+}
+
+.one-click-buy {
+	display: none;
+	clear: both;
+	font-family: "Cuprum", "Arial", serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+	box-shadow: inset 0px -3px 0 0 #367315;
+	background-color: #63a63e;
+	padding: 10px 45px 10px 49px;
+	margin: 44px 42px 0px 41px;
+	background-image: url(../img/icon-cart-catalog.svg);
+	background-repeat: no-repeat;
+	background-position: 14px;
+
+}
+
+.one-click-buy:hover {
+	background-image: url(../img/icon-cart.svg);
+	background-repeat: no-repeat;
+	background-position: 14px;
+	background-color: #5fbb2d;
+}
+
+.one-click-buy:active {
+	background-image: url(../img/icon-cart.svg);
+	background-repeat: no-repeat;
+	background-position: 14px;
+	background-color: #518534;
+}
+
+.add-bookmarks {
+	display: none;
+	clear: both;
+	font-family: "Cuprum", "Arial", serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 18px;
+	letter-spacing: normal;
+	text-align: center;
+	color: #32425c;
+	border: solid 3px #63a63e;
+	padding: 7px 29px 7px 33px;
+	margin: 7px 42px 55px 41px;
+}
+
+.add-bookmarks:hover {
+  border: solid 3px #32425c;
+}
+
+.add-bookmarks:active {
+	opacity: 0.3;
+}
+
 .about h2, .contacts h2 {
 	font-family: "Cuprum", "Arial", serif;
 	font-size: 30px;
