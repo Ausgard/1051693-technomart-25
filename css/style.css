@@ -384,10 +384,9 @@ a.login {
 
 .main-container {
 	width: 940px;
-	margin: 0 auto;
+	margin: 0px auto;
 
 }
-
 
 .bread-crumbs {
 	display: inline-block;
@@ -449,6 +448,11 @@ a.login {
 	text-align: left;
 	color: #000000;
 }
+
+.manufacturer, .supply {
+	width: 220px;
+}
+
 
 .supply label, .manufacturer label {
 	font-family: "PT Sans", "Arial", serif;
@@ -537,6 +541,23 @@ input.disabled:disabled label {
 	padding: 9px 43px;
 }
 
+.main-catalog {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 940px;
+	margin: 0px auto;
+}
+
+.catalog {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: auto;
+	margin-top: 20px;
+}
+
 .catalog-item {
 	width: 218px;
 	height: 316px;
@@ -551,6 +572,7 @@ input.disabled:disabled label {
 	letter-spacing: normal;
 	text-align: center;
 	color: #000000;
+	margin: 10px;
 }
 
 .catalog-item:hover {
