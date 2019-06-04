@@ -146,6 +146,7 @@ input[type=search]:focus {
 }
 
 .cart-full {
+	align-self: flex-end;
 	padding: 12px 21px 12px 50px;
 	font-style: normal;
 	text-align: center;
@@ -190,9 +191,6 @@ input[type=search]:focus {
 	margin: 0 auto;
 }
 
-.bottom-container h1 {
-	
-}
 .main-header h1 {
 	align-self: flex-start;
 	font-family: "Cuprum", "Arial", serif;
@@ -257,7 +255,6 @@ p.phone {
 }
 
 .sign-in a {
-
 	font-family: "Cuprum", "Arial", serif;
 	font-size: 21px;
 	line-height: 21px;
@@ -267,6 +264,14 @@ p.phone {
 	background-color: #ffffff;
 	vertical-align: middle;
 
+}
+
+.signed-in {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: nowrap;
 }
 
 .login {
@@ -283,8 +288,7 @@ p.phone {
 .user {
 	font-size: 21px;
 	line-height: 21px;
-	display: inline-block;
-	padding: 14px 68px 12px 46px;
+	padding: 14px 58px 12px 46px;
 	color: #000000;
 	background-color: #ffffff;
 
@@ -320,6 +324,10 @@ a.my-orders, a.my-account {
 	text-decoration: underline;
 	background-color: transparent;
 
+}
+
+a.my-orders:hover, a.my-account:hover {
+	color: #ee3643;
 }
 
 a.login {
