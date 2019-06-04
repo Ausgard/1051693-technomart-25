@@ -748,7 +748,6 @@ input.disabled:disabled label {
 	margin-top: 20px;
 }
 
-
 footer > section ul {
 	list-style: none;
 }
@@ -782,6 +781,10 @@ footer > section ul {
 	font-style: normal;
 	color: #ffffff;
 	text-decoration: none;
+	
+}
+
+.footer-container-up :nth-of-type(n+1) a {
 	padding-right: 60px;
 }
 
@@ -811,7 +814,7 @@ footer > section ul {
 
 
 .footer-logo {
-	padding: 20px 41px 25px 41px;
+	padding: 19px 41px 19px 41px;
 	font-style: normal;
 	font-family: "Cuprum", "Arial", sans-serif;
 	color: #fff;
@@ -904,9 +907,21 @@ color: #ee3643;
 .developers {
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-start;
+	justify-content: space-between;
 
 }
+
+.developers-mail :nth-child(1), .developers-mail :nth-child(2) {
+	align-items: flex-start;
+	margin-right: 53px;
+}
+
+.developers-mail :nth-child(1), .developers-site :nth-child(2) {
+	align-items: flex-end;
+}
+
+
+
 
 .write_us_popup, .popup-map {
 	display: none;
