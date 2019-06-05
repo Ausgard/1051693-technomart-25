@@ -567,6 +567,7 @@ input.disabled:disabled label {
 }
 
 .catalog-item {
+	position: relative;
 	width: 218px;
 	height: 316px;
 	background-color: #ffffff;
@@ -600,7 +601,7 @@ input.disabled:disabled label {
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	padding: 10px 41px 10px 37px;
-	margin: 43px 35px 21px 42px;
+	margin: 0px 35px 21px 42px;
 
 }
 
@@ -618,15 +619,39 @@ input.disabled:disabled label {
 }
 
 .item-old-price {
-	display: none;
+	font-family: "PT Sans", "Arial", serif;
+	display: block;
+	text-decoration: line-through;
+	font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  text-align: center;
+	color: #999999;
+	margin-top: 16px;
+	margin-bottom: 12px;
 }
 
-.catalog-item:hover > img {
+.catalog-item:hover > .catalog-img {
 	display: none;
 }
 
 .catalog-item:hover > .one-click-buy, .catalog-item:hover > .add-bookmarks {
 	display: block;
+}
+
+.new-item {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	background-image: url(../img/new-flag.png);
+	background-repeat: no-repeat;
+
+  top: -1px;
+  right: -1px;
+
 }
 
 .one-click-buy {
@@ -679,7 +704,7 @@ input.disabled:disabled label {
 	color: #32425c;
 	border: solid 3px #63a63e;
 	padding: 7px 29px 7px 33px;
-	margin: 7px 42px 55px 41px;
+	margin: 7px 42px 54px 41px;
 }
 
 .add-bookmarks:hover {
