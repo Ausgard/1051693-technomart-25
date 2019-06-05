@@ -1,5 +1,5 @@
 .main-header {
-	min-height: 320px;
+	height: 320px;
 	font-family: "Cuprum", "Arial", serif;
 	font-size: 17px;
 	line-height: 18px;
@@ -272,6 +272,8 @@ p.phone {
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: nowrap;
+	margin-bottom: 43px;
+	margin-top: 46px;
 }
 
 .login {
@@ -288,9 +290,12 @@ p.phone {
 .user {
 	font-size: 21px;
 	line-height: 21px;
-	padding: 14px 58px 12px 46px;
+	padding: 12px 10px 11px 13px;
 	color: #000000;
 	background-color: #ffffff;
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 10px;
 
 }
 
@@ -300,23 +305,31 @@ p.phone {
 }
 
 .user::before {
+	display: inline-block;
+	width: 20px;
+	height: 18px;
 	content: "";
 	background-image: url(../img/icon-user.svg);
 	background-repeat: no-repeat;
-	background-position: 13px;
-	display: inline-block;
+	background-position: 100% 50% ;
+	margin-right: 13px;
 
 }
 
 .user::after {
+	display: inline-block;
+	width: 20px;
+	height: 17px;
 	content: "";
 	background-image: url(../img/icon-logout.svg);
 	background-repeat: no-repeat;
-	background-position: 20px;
-	display: inline-block;
+	background-position: 50% 100%;
+	margin-left: 38px;
 
 }
-
+.my-orders {
+	margin-right: 32px;
+}
 a.my-orders, a.my-account {
 	font-size: 16px;
 	line-height: 18px;
@@ -359,7 +372,7 @@ a.login {
 
 
 .main-nav {
-	
+	height: 60px;
   width: 100%;
   text-align: center;
   background-color: #32425c;
