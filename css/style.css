@@ -1092,10 +1092,10 @@ a.popup-buy {
 
 .write-us-form {
 	position: absolute;
-	top: 100px;
-	left: 25%;
-	right: 25%;
-	display: flex;
+	bottom: 201px;
+	margin-left: 25%;
+	margin-right: 25%;
+	display: none;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
@@ -1105,7 +1105,6 @@ a.popup-buy {
 	box-shadow: 0px 20px 40px 0 #000000c0;
 	border-top: 7px solid #ee3643;
 	background-color: #ffffff;
-	margin: auto;
 
 }
 
@@ -1122,7 +1121,7 @@ a.popup-buy {
 	flex-wrap: nowrap;
 	height: 69px;
 	width: 460px;
-	margin: auto;
+	margin-top: auto;
 }
 
 .write-us-inputs input[type="email"], .write-us-inputs input[type="text"] {
@@ -1131,7 +1130,7 @@ a.popup-buy {
 
 }
 
-.write-us-inputs label, p {
+.write-us-inputs label, .write-us-textarea p {
 	font-family: "Cuprum", "Arial", serif;
   font-size: 18px;
   line-height: 18px;
@@ -1142,14 +1141,27 @@ a.popup-buy {
 
 }
 
-.e-mail {
+.write-us-inputs [placeholder], .write-us-textarea [placeholder] {
+	font-family: "PT Sans", "Arial", serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: left;
+  color: #a9a9a9;
+  
+}
+
+.name, .e-mail {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-between;
-	flex-wrap: wrap;
-	align-items: space-between;
+	width: 220px;
+	height: 69px;
 
 
+}
+
+.write-us-inputs label[type="text"] {
+	margin-bottom: auto;
 }
 
 .write-us-textarea {
