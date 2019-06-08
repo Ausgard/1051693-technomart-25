@@ -112,16 +112,20 @@
 
 		
 	  	<form class="write-us-form" action="http://echo.htmlacademy.ru" method="post">
-				<div class="name">
-					<label type="text" for="your-name">Ваше имя</label>			
-					<input type="text" name="name" id="your_name" placeholder="Имя Фамилия" aria-label="Имя Фамилия">
+				<div class="write-us-inputs">
+					<div class="name">
+						<label type="text" for="your-name">Ваше имя</label>			
+						<input type="text" name="name" id="your_name" placeholder="Имя Фамилия" aria-label="Имя Фамилия">
+					</div>
+					<div class="e-mail">
+						<label type="text" for="your-mail">Ваш e-mail</label>
+						<input type="email" name="e-mail" id="your_mail" placeholder="email@example.com" aria-label="email@example.com">
+						</div>
 				</div>
-				<div class="e-mail">
-					<label type="text" for="your-mail">Ваш e-mail</label>
-					<input type="email" name="e-mail" id="your_mail" placeholder="email@example.com" aria-label="email@example.com">
+				<div class="write-us-textarea">
+					<p>Текст письма:</p>
+					<textarea class="write-us-textarea" name="comment" id="comment-field">В свободной форме</textarea>
 				</div>
-				<p>Текст письма:</p>
-				<textarea name="comment" id="comment-field" rows="15">В свободной форме</textarea>
 				<div class="write-us-btn">
 					<button class="send-message-btn" type="submit">Отправить</button>
 					<button class="close-popup" type="button"></button>
