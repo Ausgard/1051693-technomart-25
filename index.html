@@ -29,7 +29,7 @@
 					<p class="phone">+7 (812) 555-05-55</p>
 					<p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 				</address>
-				<div class="sign-in">
+					<div class="sign-in">
 					<a href="login.html" class="login">Войти</a>
 					<a href="registration.html" class="registration">Регистрация</a>
 				</div>
@@ -110,6 +110,26 @@
 	  		</section>
 	  	</footer>
 
+		
+	  	<form class="write-us-form" action="http://echo.htmlacademy.ru" method="post">
+				<div class="name">
+					<label type="text" for="your-name">Ваше имя</label>			
+					<input type="text" name="name" id="your_name" placeholder="Имя Фамилия" aria-label="Имя Фамилия">
+				</div>
+				<div class="e-mail">
+					<label type="text" for="your-mail">Ваш e-mail</label>
+					<input type="email" name="e-mail" id="your_mail" placeholder="email@example.com" aria-label="email@example.com">
+				</div>
+				<p>Текст письма:</p>
+				<textarea name="comment" id="comment-field" rows="15">В свободной форме</textarea>
+				<div class="write-us-btn">
+					<button class="send-message-btn" type="submit">Отправить</button>
+					<button class="close-popup" type="button"></button>
+				</div>
+			</form>
+	
+
+		
 
 
 
@@ -121,33 +141,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	  	<form class="write_us_popup" action="http://echo.htmlacademy.ru" method="post">
-			<label for="your_name">Ваше имя</label>			
-			<input type="text" name="name" id="your_name" placeholder="Имя Фамилия" aria-label="Имя Фамилия">
-			<label for="your_mail">Ваш e-mail</label>
-			<input type="email" name="e-mail" id="your_mail" placeholder="email@example.com" aria-label="email@example.com">
-			<p>Текст письма:</p>
-      <textarea name="comment" id="comment-field" rows="15">В свободной форме</textarea>
-     <button class="send-message-btn" type="submit">Отправить</button>
-		</form>
-		<button class="close-popup-btn" type="button"></button>
 
 		<div class="popup-map">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+Rosja%2C+191186!5e0!3m2!1spl!2spl!4v1558110643247!5m2!1spl!2spl" width="970" height="476" style="border:0" allowfullscreen></iframe>

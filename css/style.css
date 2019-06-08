@@ -717,7 +717,7 @@ input.disabled:disabled label {
 	color: #32425c;
 	border: solid 3px #63a63e;
 	padding: 7px 29px 7px 33px;
-	margin: 7px 42px 54px 41px;
+	margin: 7px 42px 47px 41px;
 }
 
 .add-bookmarks:hover {
@@ -1009,7 +1009,6 @@ color: #ee3643;
 
 }
 
-
 .down-block {
 	display: flex;
 	flex-direction: row;
@@ -1061,7 +1060,6 @@ color: #ee3643;
 	text-transform: uppercase;
 }
 
-
 a.popup-checkout { 
 	padding: 9px 61px 10px 58px;
 	color: #ffffff;
@@ -1089,3 +1087,27 @@ a.popup-buy {
 	background-color: #ffffff;
 	border: none;
 }
+
+.write-us-form {
+	position: absolute;
+	left: 25%;
+	right: 25%;
+	bottom: 25%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 620px;
+	height: 423px;
+	box-shadow: 0px 20px 40px 0 #000000c0;
+	border-top: 7px solid #ee3643;
+	background-color: #ffffff;
+}
+
+.name {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
