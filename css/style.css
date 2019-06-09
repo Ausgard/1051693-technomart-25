@@ -520,7 +520,7 @@ a.login {
   padding: 32px 0px 34px 30px;
 }
 	
-	h3  {
+	h3	{
 	font-family: "PT Sans", "Arial", serif;
 	font-size: 17px;
 	font-weight: bold;
@@ -530,9 +530,8 @@ a.login {
 	text-align: left;
 	color: #000000;
 }
-
-.manufacturer, .supply {
-	width: 220px;
+.filters {
+	border-top: 1px solid #c5c5c5;
 }
 
 
@@ -546,30 +545,90 @@ a.login {
 	letter-spacing: normal;
 	text-align: left;
 	color: #000000;
+	text-transform: uppercase;
 }
 
-.filters input[type=checkbox] {
-  display: none;
+.manufacturer, .supply {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	width: 220px;
+	
 }
 
-.filters input[type=checkbox] + label::before {
+.manufacturer input[type=checkbox], .supply input[type=checkbox] {
+	position: relative;
+	height: 0px;
+	width: 0px;
+}
+
+.manufacturer{
+	border-bottom: 1px solid #c5c5c5;
+}
+
+.manufacturer input[type=checkbox] + label::before {
+	position: relative;
 	content: "";
-	background-repeat: no-repeat;
-	width: 23px;
+	width: 27px;
 	height: 23px;
-	display: block;
-	background-position: 50% 50%;
-	padding: 20px 8px 17px 0px;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	right: 8px;
+	top: 5px;
+}
+
+.manufacturer label::before {
+	position: relative;
+	display: inline-block;
+	width: 27px;
+	height: 23px;
+	background-image: url(../img/checkbox-off.svg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
 }
 
 .manufacturer input[type=checkbox]:checked + label::before {
-	content: "";
-	background-repeat: no-repeat;
-	width: 23px;
+	position: relative;
+	display: inline-block;
+	width: 27px;
 	height: 23px;
-	display: block;
-	background-position: 50% 50%;
-	padding: 20px 8px 17px 0px;
+	background-image: url(../img/checkbox-on.svg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	
+}
+
+.supply input[type=checkbox] + label::before {
+	position: relative;
+	content: "";
+	width: 27px;
+	height: 23px;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	right: 8px;
+	top: 5px;
+}
+
+.supply label::before {
+	position: relative;
+	display: inline-block;
+	width: 27px;
+	height: 23px;
+	background-image: url(../img/radio-off.svg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+
+.supply input[type=checkbox]:checked + label::before {
+	position: relative;
+	display: inline-block;
+	width: 27px;
+	height: 23px;
+	background-image: url(../img/radio-on.svg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	
 }
 
 .manufacturer input[type=checkbox] + label::before {
@@ -603,12 +662,6 @@ a.login {
 .supply input[type=checkbox]:checked + label:hover::before, .supply input[type=checkbox]:checked + label:active::before {
   background-image: url(../img/radio-on-hover.svg);
 }
-
-input.disabled:disabled label {
-	opacity: 0.9;
-
-}
-
 
 .filters button[type="submit"] {
 	font-family: "PT Sans", "Arial", serif;
@@ -1222,7 +1275,6 @@ a.popup-buy {
 	justify-content: space-between;
 	width: 220px;
 	height: 69px;
-
 
 }
 
