@@ -36,8 +36,7 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	min-width: 220px;
-	min-height: 42px;
+	padding: 13px 42px 10px 42px;
 	font-style: normal;
 	font-family: "Cuprum", "Arial", sans-serif;
 	color: #fff;
@@ -55,41 +54,47 @@
 	background: #ba2732;
 }
 
-.header-search {
+.header-form {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
 	min-width: 270px;
 	min-height: 42px;
-
+	
 }
 
-input[type=search] {
+.header-form input[type=search] {
+	height: 42px;
+	width: 270px;
+	padding-left: 49px;
 	background-color: #293449;
 	color: #ffffff;
-	border: none;
-	cursor: pointer;
-	padding: 12px 65px 11px 48px;
 	background-image: url(../img/icon-search-quiet.svg);
 	background-repeat: no-repeat;
 	background-position: 17px 14px;
+	border: none;
+	cursor: pointer;
 
 }
 
-input[type=search]:hover {
+.header-form input[type=search]:hover {
 	background-image: url(../img/icon-search.svg);
 	background-repeat: no-repeat;
 	background-position: 17px 14px;
 	background-color: #212a3a;
 	border: none;
-
 }
 
-input[type=search]:focus {
-	color: #000;
-	background-color: #ffffff;
+.header-form input[type=search]:focus, .header-form input[type=search]:active {
 	background-image: url(../img/icon-search-focus.svg);
 	background-repeat: no-repeat;
 	background-position: 17px 14px;
+	color: #000000;
+	background-color: #ffffff;
 	border: none;
 	outline: none;
+
 }
 
 .bookmarks {
@@ -97,14 +102,13 @@ input[type=search]:focus {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	min-width: 150px;
-	min-height: 42px;
+	padding: 12px 28px 12px 44px;
 	font-style: normal;
 	text-align: center;
 	background-color: #293449;
 	background-image: url(../img/icon-bookmark-quiet.svg);
 	background-repeat: no-repeat;
-	background-position: 17px 14px;
+	background-position: 17px 12px;
 
 }
 
@@ -112,7 +116,7 @@ input[type=search]:focus {
 	background: #212a3a;
 	background-image: url(../img/icon-bookmark.svg);
 	background-repeat: no-repeat;
-	background-position: 17px 14px;
+	background-position: 17px 12px;
 
 }
 
@@ -120,7 +124,7 @@ input[type=search]:focus {
 	background: #161d29;
 	background-image: url(../img/icon-bookmark-active.svg);
 	background-repeat: no-repeat;
-	background-position: 17px 14px;
+	background-position: 17px 12px;
 
 }
 
@@ -128,14 +132,13 @@ input[type=search]:focus {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	min-width: 150px;
-	min-height: 42px;
+	padding: 12px 30px 12px 50px;
 	font-style: normal;
 	text-align: center;
 	background-color: #293449;
 	background-image: url(../img/icon-cart-quiet.svg);
 	background-repeat: no-repeat;
-	background-position: 17px 14px;
+	background-position: 18px 12px;
 
 }
 
@@ -143,7 +146,7 @@ input[type=search]:focus {
 	background: #212a3a;
 	background-image: url(../img/icon-cart.svg);
 	background-repeat: no-repeat;
-	background-position: 17px 14px;
+	background-position: 18px 12px;
 
 }
 
@@ -151,7 +154,7 @@ input[type=search]:focus {
 	background: #161d29;
 	background-image: url(../img/icon-cart-active.svg);
 	background-repeat: no-repeat;
-	background-position: 17px 14px;
+	background-position: 18px 12px;
 
 }
 
@@ -166,7 +169,7 @@ input[type=search]:focus {
 	background-color: #ee3643;
 	background-image: url(../img/icon-cart-full.svg);
 	background-repeat: no-repeat;
-	background-position: 17px 14px;
+	background-position: 18px 12px;
 
 }
 
@@ -174,7 +177,7 @@ input[type=search]:focus {
 	background: #212a3a;
 	background-image: url(../img/icon-cart.svg);
 	background-repeat: no-repeat;
-	background-position: 17px 14px;
+	background-position: 18px 12px;
 
 }
 
