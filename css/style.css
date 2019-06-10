@@ -72,7 +72,7 @@
 	color: #ffffff;
 	background-image: url(../img/icon-search-quiet.svg);
 	background-repeat: no-repeat;
-	background-position: 17px 14px;
+	background-position: 17px 12px;
 	border: none;
 	cursor: pointer;
 
@@ -81,7 +81,7 @@
 .header-form input[type=search]:hover {
 	background-image: url(../img/icon-search.svg);
 	background-repeat: no-repeat;
-	background-position: 17px 14px;
+	background-position: 17px 12px;
 	background-color: #212a3a;
 	border: none;
 }
@@ -89,7 +89,7 @@
 .header-form input[type=search]:focus, .header-form input[type=search]:active {
 	background-image: url(../img/icon-search-focus.svg);
 	background-repeat: no-repeat;
-	background-position: 17px 14px;
+	background-position: 17px 12px;
 	color: #000000;
 	background-color: #ffffff;
 	border: none;
@@ -222,7 +222,7 @@
 	font-weight: 400;
 	color: #ee3643;
 	padding: 0;
-	margin-top: 54px;
+	margin-top: 49px;
 	margin-bottom: auto;
 	margin-left: 53px;
 }
@@ -247,9 +247,10 @@ address.our-contacts {
 }
 
 p.phone {
-	padding: 9px 47px 7px 0px;
+	padding: 7px 50px 7px 0px;
 	font-family: "Cuprum", "Arial", serif;
 	text-align: center;
+	font-style: normal;
 	font-size: 21px;
 	line-height: 21px;
 	font-weight: normal;
@@ -266,9 +267,10 @@ p.adress {
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: normal;
+	font-style: normal;
 	color: #32425c;
 	text-align: center;
-	margin-top: 10px;
+	margin-top: 6px;
 }
 
 .sign-in {
@@ -276,7 +278,7 @@ p.adress {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: auto;
+	margin-top: 46px;
 	margin-bottom: auto;
 
 }
@@ -428,7 +430,7 @@ a.login {
 
 
 .main-nav {
-	margin-top: 19px;	
+	margin-top: 25px;	
 	height: 60px;
   width: 100%;
   background-color: #32425c;
@@ -439,7 +441,7 @@ a.login {
 .main-nav ul {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 	padding: 0px;
 	margin: 0 auto;
@@ -872,9 +874,25 @@ a.login {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-
+	min-height: 536px;
+	
+}
+.about {
+	min-width: 519px;
 }
 
+ .about p:nth-child(2) {
+	margin-bottom: 24px;
+}
+
+ .about p:nth-child(3) {
+	margin-bottom: 21px;
+}
+
+
+.contacts {
+	width: 300px;
+}
 
 .about h2, .contacts h2 {
 	font-family: "Cuprum", "Arial", serif;
@@ -884,7 +902,7 @@ a.login {
 	color: #000000;
 	text-transform: uppercase;
 	font-weight: normal;
-	margin: 82px 0px 38px 0px;
+	margin: 102px 0px 26px 0px;
 }
 
 .about-btn, .mail {
@@ -902,16 +920,16 @@ a.login {
 
 .about-btn {
 	display: inline-block;
-	padding: 12px 40px;
-	margin-top: 36px;
+	padding: 11px 41px;
+	margin-top: 16px;
 
 }
 
 .mail {
 	display: inline-block;
-	padding: 12px 59px 12px 64px;
+	padding: 12px 61px 12px 62px;
 	margin-bottom: 86px;
-	margin-top: 40px;
+	margin-top: 32px;
 }
 
 .about p, .contacts p {
@@ -922,8 +940,22 @@ a.login {
 	color: #000000;
 }
 
-.about > ul {
-	margin: 0px;
+.about ul {
+	position: relative;
+	padding: 0px;
+	list-style: none;
+}
+
+.about li::before {
+	content: "";
+	position: relative;
+	display: inline-block;
+	bottom: 4px;
+	width: 25px;
+	height: 2px;
+	background-color: #fb565a;
+	margin-right: 12px;
+
 }
 
 .about li {
@@ -933,7 +965,8 @@ a.login {
 	font-weight: 300;
 	font-style: normal;
 	color: #000000;
-	margin-top: 24px;
+	margin-bottom: 20px;
+	
 }
 
 .about a {
@@ -1004,11 +1037,15 @@ footer > section ul {
 	padding-right: 0px;
 }
 
+.footer-menu {
+	margin-top: 38px;
+}
 
 .footer-menu, .goods-sections {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .footer-nav, .footer-contacts {
@@ -1020,9 +1057,13 @@ footer > section ul {
 	font-size: 18px;
 }
 
+.footer-contacts {
+	margin-left: 4px;
+	margin-bottom: 33px;
+}
 
 .footer-logo {
-	padding: 19px 41px 19px 41px;
+	padding: 19px 41px 14px 41px;
 	font-style: normal;
 	font-family: "Cuprum", "Arial", sans-serif;
 	color: #fff;
@@ -1031,9 +1072,14 @@ footer > section ul {
 
 }
 
-.footer-nav, .goods-sections {
+.footer-nav {
 	margin: 0px;
-	padding-left: 0px;
+
+}
+
+.goods-sections {
+	margin-right: 20px;
+	margin-top: 0px;
 }
 
 .footer-nav a:hover, .goods-sections a:hover, .footer-copyright a:hover {
@@ -1085,8 +1131,10 @@ color: #ee3643;
 }
 
 ul.social {
-	margin: 0px;
 	padding: 0px;
+	margin-left: 44px;
+	margin-top: 22px;
+
 }
 
 .social li:nth-of-type(n) {
@@ -1121,6 +1169,8 @@ ul.social {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	margin-right: 14px;
+
 
 }
 
