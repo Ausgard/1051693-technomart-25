@@ -232,22 +232,33 @@ address.our-contacts {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: 46px;
+	margin-top: 44px;
 	margin-bottom: auto;
+	margin-left: 20px;
 }
 
 .phone::before {
+	position: absolute;
 	content: "";
-	width: 19px;
-	height: 19px;
-	display: inline-block;
+	width: 22px;
+	height: 22px;
+	display: block;
 	background-image: url(../img/icon-phone.svg);
 	background-repeat: no-repeat;
-	margin: 0px 40px 0px 15px;
+	background-position: 1px 1px;
+	left: 11px;
 }
 
 p.phone {
-	padding: 7px 50px 7px 0px;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding-top: 5px;
+	padding-left: 22px;
+	min-width: 242px;
+	min-height: 35px;
 	font-family: "Cuprum", "Arial", serif;
 	text-align: center;
 	font-style: normal;
@@ -302,7 +313,7 @@ p.adress {
 	align-items: center;
 	flex-wrap: nowrap;
 	margin-bottom: auto;
-	margin-top: 47px;
+	margin-top: 46px;
 }
 
 .login {
@@ -319,15 +330,20 @@ p.adress {
 
 }
 
-.user {
+p.user {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 	font-size: 21px;
 	line-height: 21px;
-	padding: 12px 10px 11px 13px;
+	width: 299px;
+	height: 45px;
 	color: #000000;
 	background-color: #ffffff;
   text-align: left;
   margin-top: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 
 }
 
@@ -337,50 +353,66 @@ p.adress {
 }
 
 .user::before {
-	display: inline-block;
-	width: 20px;
-	height: 18px;
+	display: block;
+	width: 25px;
+	height: 25px;
 	content: "";
 	background-image: url(../img/icon-user.svg);
 	background-repeat: no-repeat;
-	background-position: 100% 50% ;
-	margin-right: 13px;
-
+	background-position: 4px 3px;
+	margin-right: 12px;
+	
 }
 
 .user::after {
-	display: inline-block;
-	width: 20px;
-	height: 17px;
+	display: block;
+	width: 25px;
+	height: 19px;
 	content: "";
 	background-image: url(../img/icon-logout.svg);
 	background-repeat: no-repeat;
-	background-position: 50% 100%;
-	margin-left: 38px;
+	background-position: 4px 1px;
+	margin-left: 33px;
 
 }
 
 .user:hover::after {
 	background-image: url(../img/icon-logout-hover.svg);
 	background-repeat: no-repeat;
-	background-position: 50% 100%;
-	margin-left: 38px;
+	background-position: 4px 1px;
+	margin-left: 33px;
 }
 
 .user:hover::before {
 	background-image: url(../img/icon-user-hover.svg);
 	background-repeat: no-repeat;
-	background-position: 100% 50% ;
-	margin-right: 13px;
+	background-position: 4px 3px;
+	margin-right: 12px;
 
+}
+
+.account-links {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	min-width: 213px;
+	margin-right: 57px;
+}
+
+.my-orders {
+	margin-left: 3px;
+}
+.my-account {
+	margin-left: 8px;
 }
 
 .my-orders::after {
 	display: inline-block;
 	position: relative;
 	margin-left: 15px;
-	margin-right: 12px;
-	margin-bottom: 2px;
+	margin-right: 4px;
+	margin-bottom: 3px;
 	content: "";
 	width: 4px;
 	height: 4px;
@@ -430,7 +462,7 @@ a.login {
 
 
 .main-nav {
-	margin-top: 25px;	
+	margin-top: 24px;	
 	height: 60px;
   width: 100%;
   background-color: #32425c;
@@ -477,45 +509,95 @@ a.login {
 }
 
 .bread-crumbs {
+	position: relative;
 	display: inline-block;
 	height: 100%;
 	padding: 0px;
+	margin-top: 20px;
 
 }
 .bread-crumbs ul {
 	margin: 23px 0px;
 }
 
+
 .bread-crumbs li {
 	list-style: none;
 	display: inline-block;
+
 }
 
 .bread-crumbs a {
-	padding: 0px 17px;
 	font-family: "PT Sans", "Arial", serif;
 	font-size: 13px;
 	line-height: 18px;
 	text-align: left;
 	color: #000000;
 	text-decoration: none;
-	background-image: url(../img/icon-right-small.svg);
-	background-repeat: no-repeat;
-	background-position: 0% 50%;
+	text-transform: uppercase;
 
 }
 
-.bread-crumbs li:nth-of-type(1)::before {
+.bread-crumbs :nth-of-type(1) a {
+	margin-right: 35px;
+	margin-left: 55px;
+
+}
+
+.bread-crumbs :nth-of-type(1) a::after  {
+	position: absolute;
 	content: "";
-	background-image: url(../img/icon-home.svg);
-	background-repeat: no-repeat;
 	width: 14px;
 	height: 12px;
-	display: inline-block;
-	padding: 0px 15px 0px 0px;
+	background-image: url(../img/icon-home.svg);
+	background-repeat: no-repeat;
+	left: -2px;
+	top: 3px;
+
 }
 
-	h1 {
+.bread-crumbs :nth-of-type(1) a::before {
+	position: absolute;
+	content: "";
+	width: 8px;
+	height: 12px;
+	background-image: url(../img/icon-right-small.svg);
+	background-repeat: no-repeat;
+	left: 28px;
+	top: 3px;
+}
+
+
+
+
+.bread-crumbs :nth-of-type(2) a {
+	margin-right: 30px;
+}
+
+.bread-crumbs :nth-of-type(2) a::before {
+	position: absolute;
+	content: "";
+	width: 8px;
+	height: 12px;
+	background-image: url(../img/icon-right-small.svg);
+	background-repeat: no-repeat;
+	left: 123px;
+	top: 3px;
+}
+
+.bread-crumbs :nth-of-type(3) a::before {
+	position: absolute;
+	content: "";
+	width: 8px;
+	height: 12px;
+	background-image: url(../img/icon-right-small.svg);
+	background-repeat: no-repeat;
+	left: 243px;
+	top: 3px;
+}
+
+.main-container h1 {
+	display: block;
   font-family: "Cuprum", "Arial", serif;
   font-size: 30px;
   line-height: 30px;
@@ -523,10 +605,12 @@ a.login {
   font-style: normal;
   color: #32425c;
   background-color: #f2f6f8;
-  padding: 32px 0px 34px 30px;
+  padding: 30px 0px 29px 28px;
+  margin-top: 4px;
+ 	text-transform: uppercase;
 }
 	
-	h3	{
+.main-container h3	{
 	font-family: "PT Sans", "Arial", serif;
 	font-size: 17px;
 	font-weight: bold;
@@ -538,6 +622,7 @@ a.login {
 }
 .filters {
 	border-top: 1px solid #c5c5c5;
+	margin-right: 10px;
 }
 
 
@@ -718,7 +803,8 @@ a.login {
 	justify-content: space-between;
 	flex-wrap: wrap;
 	width: auto;
-	margin-top: 20px;
+	margin-top: 48px;
+
 }
 
 .catalog-item {
