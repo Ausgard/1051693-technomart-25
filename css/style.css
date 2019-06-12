@@ -494,6 +494,38 @@ a.login {
   line-height: 17px;
 }
 
+.main-nav li:nth-of-type(1) a {
+	padding-left: 22px;
+	
+}
+
+.main-nav li:nth-of-type(2) a {
+	padding-left: 6px;
+
+}
+
+.main-nav li:nth-of-type(3) a {
+	padding-left: 0px;
+
+}
+
+.main-nav li:nth-of-type(4) a {
+	padding-left: 1px;
+
+}
+
+.main-nav li:nth-of-type(5) a {
+	padding-right: 3px;
+}
+
+.main-nav li:nth-of-type(6) a {
+	padding-right: 4px;
+}
+
+.main-nav li:nth-of-type(7) a {
+	padding-right: 25px;
+}
+
 .main-nav a:hover, .service-toggle label:hover {
   background: #293449;
 }
@@ -620,11 +652,11 @@ a.login {
 	text-align: left;
 	color: #000000;
 }
+
 .filters {
 	border-top: 1px solid #c5c5c5;
-	margin-right: 10px;
-}
 
+}
 
 .supply label, .manufacturer label {
 	font-family: "PT Sans", "Arial", serif;
@@ -802,12 +834,17 @@ a.login {
 	flex-direction: row;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	width: auto;
-	margin-top: 48px;
+	width: 700px;
+	margin-top: 58px;
 
 }
 
 .catalog-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
 	position: relative;
 	width: 218px;
 	height: 316px;
@@ -822,8 +859,14 @@ a.login {
 	letter-spacing: normal;
 	text-align: center;
 	color: #000000;
-	margin: 10px;
+
 }
+
+.catalog-item:nth-child(n+4) {
+	margin-top: 21px;
+}
+
+
 
 .catalog-item:hover {
 	box-shadow: 0px 10px 25px 0 #29344980;
@@ -833,21 +876,42 @@ a.login {
 	text-decoration: none;
 }
 
+.catalog-links {
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 135px;
+	height: 84px;
+	margin-top: 44px;
+	margin-bottom: 41px;
+	text-transform: uppercase;
+}
+
+
 .catalog-item-btn {
-	display: block;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 	font-size: 17px;
 	line-height: 18px;
+	width: 141px;
+	height: 38px;
 	color: #ffffff;
 	background-image: url(../img/red-button.svg);
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
-	padding: 10px 41px 10px 37px;
-	margin: 0px 35px 21px 42px;
+	text-transform: uppercase;
+	margin-bottom: 21px;
+	margin-left: 8px;
 
 }
 
  a.item-title {
- 	display: block;
+ 	margin-left: 14px;
+ 	margin-right: 14px;
+ 	height: 33px;
   font-size: 18px;
   font-weight: bold;
   font-style: normal;
@@ -856,13 +920,16 @@ a.login {
   letter-spacing: normal;
   text-align: center;
   color: #000000;
-  margin: 0px 33px 0px 32px;
+ 
 }
 
 .item-old-price {
-	font-family: "PT Sans", "Arial", serif;
 	display: block;
+	min-width: 67px;
+	min-height: 12px;
+	margin-bottom: 3px;
 	text-decoration: line-through;
+	font-family: "PT Sans", "Arial", serif;
 	font-size: 17px;
   font-weight: bold;
   font-style: normal;
@@ -872,15 +939,22 @@ a.login {
   text-align: center;
 	color: #999999;
 	margin-top: 16px;
-	margin-bottom: 12px;
+	margin-bottom: 3px;
+	text-transform: uppercase;
 }
+
+.hidden {
+	visibility: hidden
+}
+
+
 
 .catalog-item:hover > .catalog-img {
 	display: none;
 }
 
-.catalog-item:hover > .one-click-buy, .catalog-item:hover > .add-bookmarks {
-	display: block;
+.catalog-item:hover > .catalog-links {
+	display: flex;
 }
 
 .new-item {
@@ -889,15 +963,19 @@ a.login {
 	height: 60px;
 	background-image: url(../img/new-flag.png);
 	background-repeat: no-repeat;
-
   top: -1px;
   right: -1px;
 
 }
 
 .one-click-buy {
-	display: none;
-	clear: both;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 133px;
+	height: 38px;
+	margin-bottom: 8px;
 	font-family: "Cuprum", "Arial", serif;
   font-size: 14px;
   font-weight: normal;
@@ -908,9 +986,8 @@ a.login {
   text-align: center;
   color: #ffffff;
 	box-shadow: inset 0px -3px 0 0 #367315;
+	border: solid 1px #e5e5e5;
 	background-color: #63a63e;
-	padding: 10px 45px 10px 49px;
-	margin: 44px 42px 0px 41px;
 	background-image: url(../img/icon-cart-catalog.svg);
 	background-repeat: no-repeat;
 	background-position: 14px;
@@ -932,7 +1009,12 @@ a.login {
 }
 
 .add-bookmarks {
-	display: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 129px;
+	height: 34px;
 	clear: both;
 	font-family: "Cuprum", "Arial", serif;
 	font-size: 14px;
@@ -944,8 +1026,7 @@ a.login {
 	text-align: center;
 	color: #32425c;
 	border: solid 3px #63a63e;
-	padding: 7px 29px 7px 33px;
-	margin: 7px 42px 47px 41px;
+
 }
 
 .add-bookmarks:hover {
