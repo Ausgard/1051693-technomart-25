@@ -234,6 +234,7 @@ address.our-contacts {
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 46px;
+	margin-left: 20px;
 	margin-bottom: auto;
 	height: 71px;
 	
@@ -249,6 +250,7 @@ address.our-contacts {
 	background-repeat: no-repeat;
 	background-position: 1px 1px;
 	left: 11px;
+
 }
 
 p.phone {
@@ -257,7 +259,7 @@ p.phone {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	min-width: 264px;
+	min-width: 243px;
 	min-height: 39px;
 	font-family: "Cuprum", "Arial", serif;
 	text-align: center;
@@ -269,8 +271,8 @@ p.phone {
 	border: solid 3px #ffffff;
 	margin-bottom: auto;
 	margin-top: auto;
-	
-	
+	margin-left: auto;
+	padding-left: 21px;
 }
 
 p.adress {
@@ -287,11 +289,11 @@ p.adress {
 .sign-in {
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-start;
+	justify-content: flex-end;
 	align-items: center;
-	margin-top: 46px;
-	margin-bottom: auto;
+	margin-top: 42px;
 	height: 71px;
+	width: 299px;
 }
 
 .sign-in a {
