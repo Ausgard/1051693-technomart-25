@@ -1523,10 +1523,8 @@ a.popup-buy {
 .write-us-form {
 	display: flex;
 	position: absolute;
-	top: 201px;
-	margin-left: 25%;
-	margin-right: 25%;
-	display: none;
+	top: 542px;
+	left: 401px;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
@@ -1556,7 +1554,7 @@ a.popup-buy {
 }
 
 .write-us-inputs input[type="email"], .write-us-inputs input[type="text"] {
-	width: 216px;
+	width: 200px;
 	height: 32px;
 
 }
@@ -1574,11 +1572,31 @@ a.popup-buy {
 
 .write-us-inputs [placeholder], .write-us-textarea [placeholder] {
 	font-family: "PT Sans", "Arial", serif;
-  font-size: 13px;
-  line-height: 18px;
-  text-align: left;
-  color: #a9a9a9;
-  
+	font-size: 13px;
+	line-height: 18px;
+	text-align: left;
+	color: #a9a9a9;
+
+}
+
+.write-us-inputs [placeholder]:hover, .write-us-textarea [placeholder]:hover {
+	border-color: #b5b5b5;
+	outline-color: #b5b5b5;
+}
+
+.write-us-inputs [placeholder]:active, .write-us-textarea [placeholder]:active {
+	border-color: #ee3643;
+	outline-color: #ee3643;
+}
+
+.write-us-inputs [placeholder] {
+	padding-left: 16px;
+}
+
+.write-us-textarea [placeholder] {
+
+	padding-left: 16px;
+	padding-top: 13px;
 }
 
 .name, .e-mail {
@@ -1600,10 +1618,11 @@ a.popup-buy {
 	justify-content: space-between;
 	flex-wrap: wrap;
 	width: 460px;
-	height: 145px;
+	height: 95px;
 	align-items: flex-start;
 	resize: none;
-	margin: auto;
+	margin-bottom: 96px;
+	margin-top: auto;
 }
 
 .write-us-textarea textarea {
@@ -1642,8 +1661,8 @@ a.popup-buy {
 
 .popup-map {
 	position: absolute;
-	top: 646px;
-	left: 131px;
+	top: 82px;
+	left: 241px;
 	box-shadow: 0 0 14.7px 1.3px #2f2a2b80;
   background-color: #565656;
 
