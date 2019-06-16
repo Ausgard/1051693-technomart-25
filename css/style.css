@@ -154,7 +154,8 @@
 	font-style: normal;
 	text-align: center;
 	background-color: #293449;
-	padding-left: 24px;
+	padding-left: 21px;
+	padding-right: 3px;
 
 }
 
@@ -307,7 +308,7 @@ p.phone {
 	margin-top: auto;
 	margin-left: auto;
 	padding-left: 21px;
-	padding-top: 2px;
+	padding-top: 1px;
 }
 
 p.adress {
@@ -683,15 +684,23 @@ a.login {
 	text-align: left;
 	color: #000000;
 	text-transform: uppercase;
+	border-top: 1px solid #c5c5c5;
+	padding-top: 16px;
+	margin: 0px	auto;
 }
 
 .filters {
-	border-top: 1px solid #c5c5c5;
 	margin-top: 245px;
+	position: relative;
 
 }
 
+.filters 
+
+
+
 .supply label, .manufacturer label {
+	position: relative;
 	font-family: "PT Sans", "Arial", serif;
 	font-size: 15px;
 	font-weight: normal;
@@ -702,6 +711,7 @@ a.login {
 	text-align: left;
 	color: #000000;
 	text-transform: uppercase;
+
 }
 
 .manufacturer, .supply {
@@ -710,138 +720,106 @@ a.login {
 	justify-content: center;
 	align-items: flex-start;
 	width: 220px;
-	
+	flex-wrap: wrap;
+	position: relative;
+	padding-top: 14px;
 }
 
-.manufacturer input[type=checkbox]:disabled, .supply input[type=checkbox]:disabled {
-  background-color: #b5b5b5;
-  opacity: 0.3;
+.manufacturer {
+	padding-bottom: 3px;
 }
 
-.supply label {
-	margin-bottom: 16px;
-}
 
-.supply label:last-child {
-	margin-bottom: 75px;
+.manufacturer label, .supply label {
+	margin-bottom: 20px;
+	margin-left: 35px;
 }
 
 .manufacturer input[type=checkbox], .supply input[type=checkbox] {
-	display: none;
-
-}
-
-.manufacturer label {
-	margin-bottom: 17px;
-}
-
-.manufacturer label:last-child {
-	margin-bottom: 21px;
-}
-
-.manufacturer{
-	border-bottom: 1px solid #c5c5c5;
-}
-
-.manufacturer input[type=checkbox] + label::before {
+	display: block;
 	position: relative;
+	width: 0px;
+	height: 0px;
+
+}
+
+.manufacturer input[type=checkbox]::before {
 	content: "";
-	width: 27px;
-	height: 23px;
-	background-repeat: no-repeat;
-	background-position: 0px 0px;
-	right: 8px;
-	top: 5px;
-}
-
-.manufacturer label::before {
-	position: relative;
-	display: inline-block;
-	width: 27px;
+	display: block;
+	position: absolute;
+	width: 23px;
 	height: 23px;
 	background-image: url(../img/checkbox-off.svg);
 	background-repeat: no-repeat;
-	background-position: 0px 0px;
+	background-position: 0 0;	
+	top: -2px;
+	left: 0px;
 }
 
-.manufacturer input[type=checkbox]:checked + label::before {
-	position: relative;
-	display: inline-block;
+.manufacturer input[type=checkbox]:checked::before {
+	content: "";
+	display: block;
+	position: absolute;
 	width: 27px;
 	height: 23px;
 	background-image: url(../img/checkbox-on.svg);
 	background-repeat: no-repeat;
-	background-position: 0px 0px;
+	background-position: 0 0;	
+	top: -2px;
+	left: 0px;
+}
+
+.manufacturer input[type=checkbox]:hover::before, .manufacturer input[type=checkbox]:active::before{
+	background-image: url(../img/checkbox-off-hover.svg);
+}
+
+.manufacturer input[type=checkbox]:checked:hover::before, .manufacturer input[type=checkbox]:checked:active::before {
+	background-image: url(../img/checkbox-on-hover.svg);
 	
 }
 
-.supply input[type=checkbox] + label::before {
-	position: relative;
+.supply input[type=checkbox]::before {
 	content: "";
-	width: 25px;
-	height: 25px;
-	background-repeat: no-repeat;
-	background-position: 0px 0px;
-	right: 8px;
-	top: 5px;
-
-}
-
-.supply label::before {
-	position: relative;
-	display: inline-block;
+	display: block;
+	position: absolute;
 	width: 25px;
 	height: 25px;
 	background-image: url(../img/radio-off.svg);
 	background-repeat: no-repeat;
-	background-position: 0px 0px;
-
+	background-position: 0 0;	
+	top: -3px;
+	left: -1px;
 }
 
-.supply input[type=checkbox]:checked + label::before {
-	position: relative;
-	display: inline-block;
+.supply input[type=checkbox]:checked::before {
+	content: "";
+	display: block;
+	position: absolute;
 	width: 25px;
 	height: 25px;
 	background-image: url(../img/radio-on.svg);
 	background-repeat: no-repeat;
-	background-position: 0px 0px;
+	background-position: 0 0;	
+	top: -3px;
+	left: -1px;
+}
+
+.supply input[type=checkbox]:hover::before, .supply input[type=checkbox]:active::before{
+	background-image: url(../img/radio-off-hover.svg);
+}
+
+.supply input[type=checkbox]:checked:hover::before, .supply input[type=checkbox]:checked:active::before {
+	background-image: url(../img/radio-on-hover.svg);
 	
 }
 
-.manufacturer input[type=checkbox] + label::before {
-  background-image: url(../img/checkbox-off.svg);
-}
-
-.manufacturer input[type=checkbox]:checked + label::before {
-  background-image: url(../img/checkbox-on.svg);
-}
-
-.supply input[type=checkbox] + label::before {
-  background-image: url(../img/radio-off.svg);
-}
-
-.supply input[type=checkbox]:checked + label::before {
-  background-image: url(../img/radio-on.svg);
-}
-
-.manufacturer input[type=checkbox] + label:hover::before, .manufacturer input[type=checkbox] + label:active::before {
-  background-image: url(../img/checkbox-off-hover.svg);
-}
-
-.manufacturer input[type=checkbox]:checked + label:hover::before, .manufacturer input[type=checkbox]:checked + label:active::before {
-  background-image: url(../img/checkbox-on-hover.svg);
-}
-
-.supply input[type=checkbox] + label:hover::before, .supply input[type=checkbox] + label:active::before {
-  background-image: url(../img/radio-off-hover.svg);
-}
-
-.supply input[type=checkbox]:checked + label:hover::before, .supply input[type=checkbox]:checked + label:active::before {
-  background-image: url(../img/radio-on-hover.svg);
-}
-
 .filters button[type="submit"] {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 140px;
+	height: 38px;
 	font-family: "PT Sans", "Arial", serif;
 	font-size: 13px;
 	font-weight: normal;
@@ -851,7 +829,8 @@ a.login {
 	color: #000000;
 	background-color: #ffffff;
 	border: solid 1px #e5e5e5;
-	padding: 9px 43px;
+	margin-top: 58px;
+	text-transform: uppercase;
 }
 
 .main-catalog {
@@ -917,7 +896,7 @@ a.login {
 	width: 135px;
 	height: 84px;
 	margin-top: 44px;
-	margin-bottom: 47px;
+	margin-bottom: 45px;
 	text-transform: uppercase;
 }
 
@@ -929,15 +908,16 @@ a.login {
 	align-items: center;
 	font-size: 17px;
 	line-height: 18px;
-	width: 141px;
+	width: 137px;
 	height: 38px;
 	color: #ffffff;
 	background-image: url(../img/red-button.svg);
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	text-transform: uppercase;
-	margin-bottom: 21px;
+	margin-bottom: 20px;
 	margin-left: 8px;
+	padding-right: 4px;
 
 }
 
@@ -981,7 +961,7 @@ a.login {
 img.catalog-img{
 	width: 218px;
 	height: 170px;
-	margin-bottom: 5px;
+	margin-bottom: 3px;
 }
 
 .catalog-item:hover > .catalog-img {
@@ -1008,8 +988,9 @@ img.catalog-img{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 133px;
+	width: 129px;
 	height: 38px;
+	padding-left: 4px;
 	margin-bottom: 8px;
 	font-family: "Cuprum", "Arial", serif;
   font-size: 14px;
@@ -1025,21 +1006,21 @@ img.catalog-img{
 	background-color: #63a63e;
 	background-image: url(../img/icon-cart-catalog.svg);
 	background-repeat: no-repeat;
-	background-position: 14px;
+	background-position: 13px 9px;
 
 }
 
 .one-click-buy:hover {
 	background-image: url(../img/icon-cart.svg);
 	background-repeat: no-repeat;
-	background-position: 14px;
+	background-position: 13px 9px;
 	background-color: #5fbb2d;
 }
 
 .one-click-buy:active {
 	background-image: url(../img/icon-cart.svg);
 	background-repeat: no-repeat;
-	background-position: 14px;
+	background-position: 13px 9px;
 	background-color: #518534;
 }
 
@@ -1048,7 +1029,7 @@ img.catalog-img{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 129px;
+	width: 125px;
 	height: 34px;
 	clear: both;
 	font-family: "Cuprum", "Arial", serif;
@@ -1061,6 +1042,7 @@ img.catalog-img{
 	text-align: center;
 	color: #32425c;
 	border: solid 3px #63a63e;
+	padding-left: 4px;
 
 }
 
@@ -1272,7 +1254,12 @@ ul.footer-menu, ul.goods-sections {
 }
 
 .footer-logo {
-	padding: 19px 41px 14px 41px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 220px;
+	height: 63px;
 	font-style: normal;
 	font-family: "Cuprum", "Arial", sans-serif;
 	color: #fff;
