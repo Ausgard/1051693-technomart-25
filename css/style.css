@@ -1419,7 +1419,6 @@ ul.social {
 	
 }
 
-
 .popup-cart {
 	display: flex;
 	position: absolute;
@@ -1567,7 +1566,7 @@ a.popup-buy {
   line-height: 18px;
   text-align: left;
   color: #000000;
-  margin-right: auto
+  margin-right: auto;
   margin-top: auto;
 
 }
