@@ -1423,8 +1423,9 @@ ul.social {
 .popup-cart {
 	display: flex;
 	position: absolute;
-	top: 412px;
-	left: 401px;
+	top: 552px;
+	left: 50%;
+	transform: translate(-50%,-50%);
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
@@ -1523,8 +1524,9 @@ a.popup-buy {
 .write-us-form {
 	display: flex;
 	position: absolute;
-	top: 542px;
-	left: 401px;
+	top: 764px;
+	left: 50%;
+	transform: translate(-50%,-50%);
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
@@ -1661,8 +1663,9 @@ a.popup-buy {
 
 .popup-map {
 	position: absolute;
-	top: 82px;
-	left: 241px;
+	top: 310px;
+	left: 50%;
+	transform: translate(-50%,-50%);
 	box-shadow: 0 0 14.7px 1.3px #2f2a2b80;
   background-color: #565656;
 
