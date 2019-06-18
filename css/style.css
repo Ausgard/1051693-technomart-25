@@ -563,6 +563,7 @@ a.login {
 	width: 940px;
 	height: 266px;
 	margin-top: 20px;
+	margin-bottom: 53px;
 
 }
 
@@ -832,6 +833,285 @@ a.block-link {
 	margin-left: 26px;
 	margin-bottom: 0px;
 }
+
+.headline {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	min-width: 940px;
+	min-height: 89px;
+	background-color: #f9f5f0;
+
+}
+
+.headline h2, .headline a {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-family: "Cuprum", "Arial", serif;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	letter-spacing: normal;
+}
+.headline h2 {
+  font-size: 30px;
+	line-height: 30px;
+  color: #32425c;
+  margin-left: 29px;
+
+ 
+}
+
+.headline a {
+	width: 253px;
+	height: 38px;
+	text-decoration: none;
+  font-size: 14px;
+	line-height: 18px;
+	color: #ffffff;
+	background-color: #ee3643;
+	border-radius: 4px;
+	margin-right: 24px;
+}
+
+.popular-goods-catalog {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	margin-top: 9px;
+	margin-bottom: 20px;
+}
+
+.popular-goods-catalog .catalog-item {
+	margin-top: 11px;
+}
+
+.manufacturers-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: space-between;
+	flex-wrap: wrap;
+	width: 940px;
+	height: 310px;
+	list-style: none;
+	margin-top: 21px;
+
+}
+
+ul.manufacturers-list {
+	padding-left: 0px;
+}
+
+.manufacturers-list li:nth-of-type(n+5) {
+	margin-top: 21px;
+}
+
+.manufacturers-list a {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 218px;
+	height: 143px;
+	background-color: #ffffff;
+	border: solid 1px #e5e5e5;
+	background-repeat: no-repeat;
+	
+
+}
+
+.manufacturers-list a:hover {
+	box-shadow: 0px 10px 25px 0 #29344980;
+
+}
+
+.manufacturers-list a:active {
+	box-shadow: 0px 4px 10px 0 #29344980;
+	opacity: 0.3;
+
+}
+
+.manufacturers-list li:nth-of-type(1) a {
+	background-image: url(../img/bosch-manufacturer.png);
+	background-position: 50% 49%;
+}
+
+.manufacturers-list li:nth-of-type(2) a {
+	background-image: url(../img/makita-manufacturer.png);
+	background-position: 49% 48%;
+}
+
+.manufacturers-list li:nth-of-type(3) a {
+	background-image: url(../img/de-walt-manufacturer.png);
+	background-position: 50% 47%;
+}
+
+.manufacturers-list li:nth-of-type(4) a {
+	background-image: url(../img/interskol-manufacturer.png);
+	background-position: 50% 36%;
+}
+
+.manufacturers-list li:nth-of-type(5) a {
+	background-image: url(../img/hitachi-manufacturer.png);
+	background-position: 55% 50%;
+}
+
+.manufacturers-list li:nth-of-type(6) a {
+	background-image: url(../img/lg-manufacturer.png);
+	background-position: 48% 47%;
+}
+
+.manufacturers-list li:nth-of-type(7) a {
+	background-image: url(../img/aeg-manufacturer.png);
+	background-position: 50% 45%;
+}
+
+.manufacturers-list li:nth-of-type(8) a {
+	background-image: url(../img/metabo-manufacturer.png);
+	background-position: 61% 43%;
+}
+
+.services {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-top: 85px;
+	min-height: 522px;
+	background-color: #f4f7f9;
+	background-image: url();
+
+}
+
+.services > h2 {
+	margin-top: 65px;
+}
+
+.services p {
+	margin-top: 1px;
+}
+
+.interactive-block {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 595px;
+	height: 183px;
+	margin-top: 58px;
+	position: relative;
+
+}
+
+.interactive-block::after {
+	content: "";
+	position: absolute;
+	width: 468px;
+	height: 216px;
+	background-image: url(../img/interactive-block-delivery.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	top: 21px;
+	left: 471px;
+}
+
+
+.services-list {
+	list-style: none;
+	position: relative;
+
+}
+
+ul.services-list {
+	padding-left: 0px;
+}
+
+.services-list a {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	width: 217px;
+	height: 54px;
+	box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+  background-color: #32425c;
+	padding-left: 23px;
+	font-family: "Cuprum", "Arial", serif;
+	color: #ffffff;
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 30px;
+	font-style: normal;
+	font-stretch: normal;
+	letter-spacing: normal;
+}
+
+.services-list li:nth-of-type(1) a {
+	padding-bottom: 7px;
+} 
+
+.services-list li:nth-of-type(2) a {
+	padding-bottom: 7px;
+} 
+
+.services-list li:nth-of-type(3) a {
+	padding-bottom: 4px;
+	width: 217px;
+	height: 57px;
+} 
+
+.services-list a::after {
+	content: "";
+	width: 10px;
+	height: 279px;
+	position: absolute;
+	background-image: url(../img/services-list-shadow.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	top: -45px;
+	right: 0px;
+}
+
+.services-list a:hover {
+	box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+  background-color: #293449;
+}
+
+.services-list a:active {
+	box-shadow: 0px 1px 0 0 #ffffff, inset 0px 1px 0 0 #ffffff;
+  background-color: #ffffff;
+  color: #32425c;
+}
+
+.services-description {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-left: 80px;
+}
+
+.services-description h2 {
+	font-family: "Cuprum", "Arial", serif;
+	font-size: 36px;
+	line-height: 36px;
+	color: #32425c;
+	margin-bottom: 25px;
+	margin-top: -21px;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	letter-spacing: normal;
+}
+
+
 
 .bread-crumbs {
   position: relative;
@@ -1128,7 +1408,7 @@ a.block-link {
   color: #000000;
 }
 
-.catalog-item:nth-child(n+4) {
+.catalog .catalog-item:nth-child(n+4) {
   margin-top: 21px;
 }
 
@@ -1324,7 +1604,8 @@ img.catalog-img {
 }
 
 .about h2,
-.contacts h2 {
+.contacts h2,
+.services > h2 {
   font-family: "Cuprum", "Arial", serif;
   font-size: 30px;
   line-height: 30px;
@@ -1332,7 +1613,12 @@ img.catalog-img {
   color: #000000;
   text-transform: uppercase;
   font-weight: normal;
-  margin: 102px 0px 26px 0px;
+  
+}
+
+.about h2,
+.contacts h2 {
+	margin: 79px 0px 26px 0px;
 }
 
 .about-btn,
@@ -1368,7 +1654,8 @@ img.catalog-img {
 }
 
 .about p,
-.contacts p {
+.contacts p,
+.services p {
   font-family: "PT Sans", "Arial", serif;
   font-size: 13px;
   line-height: 24px;
