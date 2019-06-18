@@ -1054,6 +1054,9 @@ ul.services-list {
 
 .services-list li:nth-of-type(1) a {
 	padding-bottom: 7px;
+	box-shadow: 0px 1px 0 0 #ffffff, inset 0px 1px 0 0 #ffffff;
+	background-color: #ffffff;
+	color: #32425c;
 } 
 
 .services-list li:nth-of-type(2) a {
