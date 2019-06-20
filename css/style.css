@@ -30,7 +30,6 @@
   flex-direction: row;
   justify-content: flex-start;
   min-height: 42px;
-  min-width: 940px;
   margin: auto;
 }
 
@@ -227,8 +226,8 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  width: 940px;
   margin: auto;
+  width: 940px;
 }
 
 .main-header h1 {
@@ -539,9 +538,18 @@ a.login {
   background: #1d2739;
 }
 
-.main-container {
-  width: 940px;
-  margin: 0px auto;
+.bottom-container,
+.promo-top,
+.promo-down,
+.headline,
+.popular-goods-catalog,
+.popular-manufacturers,
+.services,
+.information,
+.footer-container-up,
+.footer-container-down {
+	width: 940px;
+	margin: 0 auto;
 }
 
 .promo-top {
@@ -550,7 +558,6 @@ a.login {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-  width: 940px;
   height: 123px;
   margin-top: 59px;
 
@@ -560,11 +567,10 @@ a.login {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	width: 940px;
 	height: 266px;
 	margin-top: 20px;
 	margin-bottom: 53px;
-
+  position: relative;
 }
 
 .promo-blocks {
@@ -680,7 +686,6 @@ a.block-link {
 	left: 197px;
 }
 
-
 .equipment {
 	background-color: #dc91d8;
 
@@ -737,39 +742,137 @@ a.block-link {
 }
 
 
-.down-slider {
-	position: relative;
-	width: 620px;
-	height: 266px;
-	background-image: url(../img/slider-image.jpg);
-	background-repeat: no-repeat;
+
+
+/*.slider-controls label {
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	background-color: #ffffff;
+	border: 2px solid #ffffff;
+	border-radius: 50%;
 
 }
 
-.down-slider::before {
-	content: "";
-	display: block;
+.slider-controls-active i {
 	position: absolute;
-	width: 22px;
-	height: 40px;
-	background-image: url(../img/icon-slider-left.svg);
-	background-repeat: no-repeat;
-	left: 25px;
-	top: 114px;
+	width: 6px;
+	height: 6px;
+	border: 2px solid #ffffff;
+	border-radius: 50%;
+	background-color: #ee3643;
+	z-index: 1;*/
+}
+.slider {
+  position: relative;
+}
+
+
+.slider::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 22px;
+  height: 40px;
+  background-image: url(../img/icon-slider-left.svg);
+  background-repeat: no-repeat;
+  left: 25px;
+  top: 114px;
+  z-index: 1;
 }
  
-.down-slider::after {
-	content: "";
-	display: block;
-	position: absolute;
-	width: 22px;
-	height: 40px;
-	background-image: url(../img/icon-slider-right.svg);
-	background-repeat: no-repeat;
-	left: 578px;
-	top: 114px;
+.slider::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 22px;
+  height: 40px;
+  background-image: url(../img/icon-slider-right.svg);
+  background-repeat: no-repeat;
+  left: 578px;
+  top: 114px;
+
 }
 
+.slider input[type="radio"] {
+  display: none;
+}
+
+.slider-inner {
+  overflow: hidden;
+}
+
+.slider-slides {
+  margin: 0px;
+  padding: 0px;
+  width: 300%;
+  transition: transform 0.8s ease;
+
+}
+
+.slider-slides img {
+  float: left;
+  width: 620px;
+  height: 266px;
+}
+.slider-item {
+  width: 620px;
+  height: 266px;
+}
+
+.slider-item:nth-child(1) {
+  background-image: url(../img/slider-image.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.slider-controls {
+  position: absolute;
+  display: block;
+  left: 292px;
+  bottom: 22px;
+  z-index: 1;
+}
+
+.slider-controls {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.slider-controls label {
+  display: inline-block;
+  margin: 0 3px;
+  width: 6px;
+  height: 6px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+  background-color: #ee3643;
+}
+
+#btn-1:checked ~ .slider-inner .slider-slides {
+  transform: translate(0);
+}
+
+#btn-2:checked ~ .slider-inner .slider-slides {
+  transform: translate(-620px);
+}
+
+.slider-list {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+
+
+/*конец*/
 .slider-link {
 	display: flex;
 	flex-direction: row;
@@ -787,11 +890,11 @@ a.block-link {
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.29;
+  line-height: 18px;
   letter-spacing: normal;
   text-align: center;
-	margin-top: 124px;
-	margin-left: 27px;
+	margin-top: 123px;
+	margin-left: 26px;
 
 }
 
@@ -803,7 +906,7 @@ a.block-link {
 	background-color: #ba2732;
 }
 
-.down-slider h3 {
+.slider h3 {
 	font-family: "Cuprum", "Arial", serif;
 	font-size: 36px;
   font-weight: bold;
@@ -814,18 +917,17 @@ a.block-link {
   text-align: left;
   text-transform: uppercase;
   color: #ffffff;
-	margin-top: 23px;
-	margin-left: 24px;
-	margin-bottom: 1px;
+	margin: 0px;
+  padding: 23px 0px 1px 24px;
 }
 
-.down-slider p {
+.slider p {
 	font-family: "PT Sans", "Arial", serif;
 	font-size: 18px;
 	font-weight: normal;
 	font-style: normal;
 	font-stretch: normal;
-	line-height: 1.33;
+	line-height: 24px;
 	letter-spacing: -1px;;
 	text-align: left;
 	color: #ffffff;
@@ -839,7 +941,6 @@ a.block-link {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	min-width: 940px;
 	min-height: 89px;
 	background-color: #f9f5f0;
 
@@ -898,7 +999,6 @@ a.block-link {
 	justify-content: space-between;
 	align-items: space-between;
 	flex-wrap: wrap;
-	width: 940px;
 	height: 310px;
 	list-style: none;
 	margin-top: 21px;
@@ -978,14 +1078,20 @@ ul.manufacturers-list {
 	background-position: 61% 43%;
 }
 
+.services-container {
+		
+	height: 522px;
+	background-color: #f4f7f9;
+	margin: 0 auto;
+}
+
 .services {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	margin-top: 85px;
 	min-height: 522px;
-	background-color: #f4f7f9;
-	background-image: url();
+	
 
 }
 
@@ -1376,7 +1482,6 @@ ul.services-list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 940px;
   margin: 0px auto;
 }
 
@@ -1725,7 +1830,6 @@ img.catalog-img {
   align-items: flex-start;
   flex-wrap: wrap;
   height: 193px;
-  width: 940px;
   margin: 0 auto;
 }
 
@@ -1870,7 +1974,6 @@ ul.goods-sections {
   align-items: center;
   flex-wrap: wrap;
   height: 107px;
-  width: 940px;
   margin: 0 auto;
 }
 

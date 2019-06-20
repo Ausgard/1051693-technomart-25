@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>Техномарт - интернет-магазин строительных материалов и инструментов для ремонта</title>
   	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i.PT+Sans:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
-  	<link rel="stylesheet" href="css/normalize.css" class="css">
   	<link rel="stylesheet" href="css/style.css" class="css">
+  	<link rel="stylesheet" href="css/normalize.css" class="css">
   </head>
   <body>
   	<header class="main-header">
@@ -46,7 +46,7 @@
 			  	</nav>
 		  	</div>
   	</header>
-  		<main class="main-container">	
+  		<main class="main-container">
   			<div class="promo-top">
   				<div class="block materials new">
   					<h3>Материалы</h3>
@@ -61,12 +61,24 @@
   					<a class="block-link" href="equipment.html">Для стройки</a>
   				</div>
 				</div>
-				<div class="promo-down">
-  				<div class="down-slider">
-  					<h3>Дрели</h3>
-  					<p>Соседям на радость!</p>
-  					<a class="slider-link" href="#">Открыть каталог</a>
-  				</div>
+				<div class="promo-down">				
+			    <div class="slider">
+			      <input type="radio" id="btn-1" name="toggle" checked>
+			      <input type="radio" id="btn-2" name="toggle">
+			      <div class="slider-controls">
+			        <label for="btn-1"></label>
+			        <label for="btn-2"></label>
+			      </div>
+			      <div class="slider-inner">
+			        <ul class="slider-slides">
+			          <li class="slider-item">
+				        	<h3>Дрели</h3>
+			  					<p>Соседям на радость!</p>
+			  					<a class="slider-link" href="catalog.html">Открыть каталог</a>
+			        	</li>
+			        </ul>
+			      </div>
+			    </div>
   				<div class="promo-blocks">
 	  				<div class="block discount">
 							<h3>Скидки 50%</h3>
@@ -143,22 +155,24 @@
 						<li><a href="metabo-manufacturer.html"></a></li>
 					</ul>
 				</section>
-				<section class="services">
-					<h2>Сервисы</h2>
-					<p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
-Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-					<div class="interactive-block">
-						<ul class="services-list">
-							<li><a active>Доставка</a></li>
-							<li><a>Гарантия</a></li>
-							<li><a>Кредит</a></li>
-						</ul>
-						<div class="services-description">
-							<h2>Доставка</h2>
-							<p>Мы с удовольствием доставим ваш товар прямо 
-									к вашему подъезду совершенно бесплатно!
-									Ведь мы неплохо заработаем,<br> 
-									поднимая его на ваш этаж!</p>
+				<section class="services-container">
+						<div class="services">
+						<h2>Сервисы</h2>
+						<p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
+	Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+						<div class="interactive-block">
+							<ul class="services-list">
+								<li><a active>Доставка</a></li>
+								<li><a>Гарантия</a></li>
+								<li><a>Кредит</a></li>
+							</ul>
+							<div class="services-description">
+								<h2>Доставка</h2>
+								<p>Мы с удовольствием доставим ваш товар прямо 
+										к вашему подъезду совершенно бесплатно!
+										Ведь мы неплохо заработаем,<br> 
+										поднимая его на ваш этаж!</p>
+							</div>
 						</div>
 					</div>
 				</section>
