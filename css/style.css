@@ -549,7 +549,6 @@ a.login {
 .footer-container-up,
 .footer-container-down,
 .bread-crumbs,
-.main-container h1,
 .catalog-description p
  {
 	width: 940px;
@@ -1278,7 +1277,13 @@ ul.services-list {
 }
 
 .main-container h1 {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 912px;
+  height: 89px;
+  margin: 0 auto;
   font-family: "Cuprum", "Arial", serif;
   font-size: 30px;
   line-height: 30px;
@@ -1286,8 +1291,8 @@ ul.services-list {
   font-style: normal;
   color: #32425c;
   background-color: #f2f6f8;
-  padding: 30px 0px 29px 28px;
-  margin-top: 4px;
+  padding-left: 28px;
+  margin-top: 20px;
   text-transform: uppercase;
 }
 
@@ -1795,6 +1800,59 @@ img.catalog-img {
   margin-top: 18px;
 }
 
+ .paginator {
+  font-family: "PT Sans", "Arial", serif;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  text-align: center;
+  margin-top: 52px;
+  margin-bottom: 60px;
+  
+}
+
+.paginator a:hover {
+  border: solid 1px #bdc6ca;
+}
+
+.paginator a:active {
+  border: solid 1px #ee3643;
+}
+
+ .paginator a {
+  display: inline-block;
+  vertical-align: middle;
+  height: 36px;
+  width: auto;
+  line-height: 36px;
+  padding: 0px 14px;
+  margin-right: 8px;
+  text-decoration: none;
+  border: solid 1px #e5e5e5;
+  background-color: #ffffff;
+  border-radius: 3px;
+  color: #000000;
+ }
+
+.paginator a:last-child {
+  padding: 0px 31px;
+  margin: 0px;
+  text-transform: uppercase;
+}
+
+a.current {
+  background-color: #ee3643;
+  color: #ffffff;
+  border: solid 1px #ee3643;
+}
+
+a.current:hover {
+  border: solid 1px #ee3643;
+}
+
 .catalog-description {
   background-color: #f4f7f9;
   height: 261px;
@@ -1813,8 +1871,8 @@ img.catalog-img {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
-  margin-top: 67px;
-  margin-bottom: 26px;
+  padding-top: 65px;
+  padding-bottom: 26px;
 
 }
 
@@ -1823,6 +1881,7 @@ img.catalog-img {
   font-family: "PT Sans", "Arial", serif;
   font-size: 13px;
   line-height: 24px;
+  text-align: left;
 }
 
 .footer-nav ul,
