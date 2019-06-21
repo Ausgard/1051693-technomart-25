@@ -58,8 +58,21 @@
   			<li><a href="perforators.html">Перфораторы</a></li>
   		</ul>
   		<h1>Перфораторы</h1>
-  		<div class="main-catalog">
-  		<section class="filters">
+  		<section class="main-catalog">
+  			<section class="filters">
+  			<div class="filter-top">
+					<p>фильтр:</p>
+					<h3>Цена:</h3>
+			<form action="https://echo.htmlacademy.ru" method="post" oninput="daysoutput.value=dayscount.value">
+					<div class="filter-prise">
+						<input type="range" id="results" name="results" min="0" max="29999" step="1">
+					</div>
+					<div class="results">
+						<output name="results"></output>
+						<output name="results"></output>
+					</div>
+  			</div>
+  		</form>	
         <h3>Производители:</h3>
 	      <form class="manufacturer">
 		      <input disabled type="checkbox" name="bosch" id="bosch">
@@ -83,6 +96,14 @@
         <button type="submit" value="Показать">Показать</button>
       </section>
       <section class="catalog">
+      	<ul class="sorting-filter">
+      		<li>Сортировка:</li>
+      		<li><a href="sort-price.html" class="current-link">По цене</a></li>
+      		<li><a href="sort-type.html">По типу</a></li>
+      		<li><a href="sort-functional.html">По функционалу</a></li>
+      		<li><a href="sort-ascending.html" class="dir-up current-up"></a></li>
+      		<li><a href="sort-descending.html" class="dir-dowm"></a></li>
+      	</ul>
       	<div class="catalog-item">
       		<div class="new-item"></div>
       		<img class="catalog-img" src="img/perforator_1.jpg" alt="Перфоратор BOSCHBFG 3000">
@@ -189,7 +210,7 @@
 					<a href="#next">Следующая</a>
 				</div>
       </section>
-    </div>
+    </section>
   	</main>
 		<section class="catalog-description">
 			<p>Пара слов о перфораторах</p>
