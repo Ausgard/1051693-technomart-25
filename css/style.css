@@ -142,8 +142,8 @@
   font-style: normal;
   text-align: center;
   background-color: #293449;
-  padding-left: 21px;
-  padding-right: 3px;
+  padding-left: 24px;
+  
 }
 
 .cart::before {
@@ -299,7 +299,7 @@ p.adress {
   font-style: normal;
   color: #32425c;
   text-align: center;
-  margin-top: 3px;
+  margin-top: 4px;
 }
 
 .sign-in {
@@ -1054,8 +1054,7 @@ ul.manufacturers-list {
 	background-position: 61% 43%;
 }
 
-.services-container {
-		
+.services-container {	
 	height: 522px;
 	background-color: #f4f7f9;
 	margin: 0 auto;
@@ -1299,6 +1298,8 @@ ul.services-list {
 
 .filters {
   position: relative;
+  width: 220px;
+  height: 100%;
 }
 
 .filter-top {
@@ -1313,13 +1314,35 @@ ul.services-list {
 
 
 .filter-top h3,
-.filters h3 {
+.filter-down h3,
+.filter-middle h3 {
   font-family: "PT Sans", "Arial", serif;
   font-size: 17px;
   font-weight: bold;
   line-height: 30px;
   color: #000000;
+  text-transform: uppercase;
+
+}
+
+.filter-top h3 {
+  margin-top: 11px;
+  margin-bottom: 14px;
+}
+
+.filter-middle h3 {
+  border-top: 1px solid #c5c5c5;
+  margin-top: 25px;
+  margin-bottom: 14px;
   padding-top: 16px;
+
+}
+
+.filter-down h3 {
+  border-top: 1px solid #c5c5c5;
+  margin-top: 0px;
+  margin-bottom: 14px;
+  padding-top: 17px;
 
 }
 
@@ -1335,12 +1358,6 @@ ul.services-list {
   background-color: #f7f3ec;
   margin: 0px;
   padding-left: 19px;
-}
-
-.filters > h3 {
-  border-top: 1px solid #c5c5c5;
-  padding-top: 16px;
-
 }
 
 .filter-prise {
@@ -1363,7 +1380,7 @@ ul.services-list {
   height: 38px;
   background-color: #ffffff;
   color: #000000;
-  margin-top: 9px;
+  margin-top: 10px;
 }
 
 .results output {
@@ -1384,7 +1401,7 @@ ul.services-list {
   height: 1px;
   display: block;
   position: absolute;
-  top: 17px;
+  top: 18px;
   left: 105px;
   background-color: #000000;
 
@@ -1420,13 +1437,17 @@ ul.services-list {
   width: 220px;
   flex-wrap: wrap;
   position: relative;
-  padding-top: 14px;
 }
 
 .manufacturer {
-  padding-bottom: 3px;
-}
+  margin-bottom: 2px;
 
+}
+.supply {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+}
 .manufacturer label,
 .supply label {
   margin-bottom: 20px;
@@ -2028,7 +2049,7 @@ img.catalog-img {
   line-height: 18px;
   letter-spacing: normal;
   text-align: center;
-  margin-top: 52px;
+  margin-top: 50px;
   margin-bottom: 60px;
   
 }
