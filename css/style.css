@@ -2029,7 +2029,7 @@ img.catalog-img {
   text-decoration: none;
 }
 
-.contacts > .mail {
+.contacts .mail {
   font-family: "Cuprum", "Arial", serif;
   font-size: 14px;
   color: #ffffff;
@@ -2430,7 +2430,7 @@ ul.social {
 
 a.popup-checkout,
 a.popup-buy {
-  display: flex;
+  display: none;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -2463,9 +2463,9 @@ a.popup-buy {
 }
 
 .write-us-form {
-  display: flex;
-  position: absolute;
-  top: 764px;
+  display: none;
+  position: fixed;
+  bottom: -14px;
   left: 50%;
   transform: translate(-50%, -50%);
   flex-direction: column;
@@ -2544,6 +2544,14 @@ input[type="text"] {
   padding-top: 13px;
 }
 
+.write-us-inputs [placeholder],
+.write-us-textarea [placeholder],
+.send-message-btn,
+.close-popup {
+  outline-color: #ee3643;
+}
+
+
 .name,
 .e-mail {
   display: flex;
@@ -2604,8 +2612,9 @@ input[type="text"] {
 }
 
 .popup-map {
+  display: none;
   position: absolute;
-  top: 310px;
+  top: 2280px;
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 0 0 14.7px 1.3px #2f2a2b80;
@@ -2616,3 +2625,23 @@ input[type="text"] {
   width: 940px;
   height: 446.2px;
 }
+
+.show-popup {
+  display: flex;
+  animation-name: open-animation;
+  animation-duration: 1s;
+}
+
+@keyframes open-animation {
+  0% {transform: translateX(-2000px);
+}
+  30% {transform: translateX(1000px);
+}
+  60% {transform: translateX(-320px);
+      {transform: translateY(0px);
+}
+  100% {transform: translateX(0px);
+       {transform: translateY(0px);}
+}
+
+action="http://echo.htmlacademy.ru" method="post"
