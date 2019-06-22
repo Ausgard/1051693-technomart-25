@@ -2629,19 +2629,24 @@ input[type="text"] {
 .show-popup {
   display: flex;
   animation-name: open-animation;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
 }
 
 @keyframes open-animation {
-  0% {transform: translateX(-2000px);
+  0%  {transform: translate(-50%, 100%);
+      opacity: 0;     
 }
-  30% {transform: translateX(1000px);
-}
-  60% {transform: translateX(-320px);
-      {transform: translateY(0px);
-}
-  100% {transform: translateX(0px);
-       {transform: translateY(0px);}
+  100% {transform: translate(-50%, -50%);
+        opacity: 1;}
 }
 
-action="http://echo.htmlacademy.ru" method="post"
+.error-popup{
+  animation-name: error-animation;
+  animation-duration: 0.5s;
+}
+
+@keyframes error-animation {
+  0%, 100% {transform: translate(-50%, -50%);}
+  10%, 30%, 50%, 70%, 90% {transform: translate(-51%, -50%);}
+  20%, 40%, 60%, 80% {transform: translate(-49%, -50%);}                    
+}
