@@ -2039,6 +2039,8 @@ img.catalog-img {
 
 .popup-img img {
   margin-top: 18px;
+  width: 300px;
+  height: 158px;
 }
 
  .paginator {
@@ -2364,8 +2366,8 @@ ul.social {
 
 .popup-cart {
   display: none;
-  position: absolute;
-  top: 552px;
+  position: fixed;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   flex-direction: column;
@@ -2430,7 +2432,7 @@ ul.social {
 
 a.popup-checkout,
 a.popup-buy {
-  display: none;
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -2450,7 +2452,9 @@ a.popup-buy {
   background-color: #ffffff;
 }
 
-.close-popup {
+.close-popup,
+.close-popup-map,
+.close-popup-buy {
   position: absolute;
   right: 9px;
   top: 9px;
@@ -2460,6 +2464,11 @@ a.popup-buy {
   background-repeat: no-repeat;
   background-color: transparent;
   border: none;
+}
+
+.close-popup-map {
+  top: 2px;
+  right: -30px;
 }
 
 .write-us-form {
@@ -2619,6 +2628,13 @@ input[type="text"] {
   transform: translate(-50%, -50%);
   box-shadow: 0 0 14.7px 1.3px #2f2a2b80;
   background-color: #565656;
+}
+
+.popup-map h3 {
+  visibility: hidden;
+  height: 0px;
+  width: 0px;
+
 }
 
 .local-map {

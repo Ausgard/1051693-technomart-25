@@ -1,9 +1,13 @@
 var btn = document.querySelector("a.mail");
 		form = document.querySelector(".write-us-form");
 		close = document.querySelector(".close-popup");
-		log = form.querySelector("[name=your-name]");
-		mail = form.querySelector("[name=your-mail]"); 
-		text = form.querySelector("[name=comment-field]");
+		log = document.querySelector("[name=your-name]");
+		mail = document.querySelector("[name=your-mail]"); 
+		text = document.querySelector("[name=comment-field]");
+		mapBtn = document.querySelector("a.popup-img");
+		mapPopup = document.querySelector(".popup-map");
+		mapClose = document.querySelector(".close-popup-map"); 
+
 		isStorageSupport = true;
 		storage = ""; 
 
@@ -24,7 +28,8 @@ var btn = document.querySelector("a.mail");
 			text.focus();}
 		else {
 			mail.focus();
-}});
+}
+});
 
 		close.addEventListener("click", function (evt) {
 			evt.preventDefault();
@@ -40,6 +45,8 @@ var btn = document.querySelector("a.mail");
 		else {
 		if (isStorageSupport) {
 				localStorage.setItem("log", log.value);
+				localStorage.setItem("mail", mail.value);
+				localStorage.setItem("text", text.value);
 }}});
 
 window.addEventListener("keydown", function (evt) {
@@ -49,3 +56,16 @@ window.addEventListener("keydown", function (evt) {
 			form.classList.remove("show-popup");
 			form.classList.remove("error-popup");
 }}}); 
+
+		mapBtn.addEventListener("click", function (evt) {
+			evt.preventDefault();
+			mapPopup.classList.add("show-popup");});
+		mapClose.addEventListener("click", function (evt) {
+			evt.preventDefault();
+			mapPopup.classList.remove("show-popup");});
+			window.addEventListener("keydown", function (evt) {
+		if (evt.keyCode === 27) {
+		if (mapPopup.classList.contains("show-popup")) {
+			evt.preventDefault();
+			mapPopup.classList.remove("show-popup");
+}}});
