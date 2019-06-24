@@ -759,7 +759,7 @@ a.block-link {
   background-repeat: no-repeat;
   left: 25px;
   top: 114px;
-  z-index: 1;
+
 }
  
 .slider::after {
@@ -787,7 +787,7 @@ a.block-link {
   margin: 0px;
   padding: 0px;
   width: 300%;
-  transition: transform 0.8s ease;
+
 
 }
 
@@ -820,7 +820,7 @@ a.block-link {
   text-align: center;
 }
 
-.slider-controls label {
+label.slider-dots {
   display: inline-block;
   margin: 0 3px;
   width: 6px;
@@ -829,20 +829,51 @@ a.block-link {
   border-radius: 50%;
   background-color: #ffffff;
   cursor: pointer;
-  transition: background-color 0.2s;
+}
+
+label.arrow-left {
+  display: block;
+  position: absolute;
+  width: 22px;
+  height: 40px;
+  background-image: url(../img/icon-slider-left.svg);
+  background-repeat: no-repeat;
+  left: -267px;
+  top: -102px;
+
+}
+
+label.arrow-right {
+  display: block;
+  position: absolute;
+  width: 22px;
+  height: 40px;
+  background-image: url(../img/icon-slider-right.svg);
+  background-repeat: no-repeat;
+  left: 286px;
+  top: -102px;
 }
 
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
-#btn-2:checked ~ .slider-controls label[for="btn-2"],
-#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+#btn-2:checked ~ .slider-controls label[for="btn-2"] {
   background-color: #ee3643;
 }
 
-#btn-1:checked ~ .slider-inner .slider-slides {
+#btn-3:checked ~ .slider-controls label[for="btn-1"] {
+  background-color: #ee3643;
+}
+
+#btn-4:checked ~ .slider-controls label[for="btn-2"] {
+  background-color: #ee3643;
+}
+
+#btn-1:checked ~ .slider-inner .slider-slides,
+#btn-3:checked ~ .slider-inner .slider-slides {
   transform: translate(0);
 }
 
-#btn-2:checked ~ .slider-inner .slider-slides {
+#btn-2:checked ~ .slider-inner .slider-slides,
+#btn-4:checked ~ .slider-inner .slider-slides {
   transform: translate(-620px);
 }
 
@@ -891,7 +922,7 @@ a.block-link {
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1;
+  line-height: 36px;
   letter-spacing: normal;
   text-align: left;
   text-transform: uppercase;
@@ -1079,79 +1110,66 @@ ul.manufacturers-list {
 	margin-top: 1px;
 }
 
+.servises-slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .interactive-block {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	width: 595px;
-	height: 183px;
+	justify-content: flex-start;
 	margin-top: 58px;
 	position: relative;
+  width: 940px;
+  height: 522px;
 
 }
 
-.interactive-block::after {
-	content: "";
-	position: absolute;
-	width: 468px;
-	height: 216px;
-	background-image: url(../img/interactive-block-delivery.png);
-	background-repeat: no-repeat;
-	background-position: 0 0;
-	top: 21px;
-	left: 471px;
+.interactive-block input[type="checkbox"] {
+  display: none;
 }
 
-
-.services-list {
-	list-style: none;
-	position: relative;
-
+.interactive-block-controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 240px;
+  height: 183px;
 }
 
-ul.services-list {
-	padding-left: 0px;
-}
-
-.services-list a {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: center;
-	width: 217px;
-	height: 54px;
-	box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+.interactive-block-controls label {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 217px;
+  height: 61px;
+  box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
   background-color: #32425c;
-	padding-left: 23px;
-	font-family: "Cuprum", "Arial", serif;
-	color: #ffffff;
-	font-size: 21px;
-	font-weight: bold;
-	line-height: 30px;
-	font-style: normal;
-	font-stretch: normal;
-	letter-spacing: normal;
+  padding-left: 23px;
+  font-family: "Cuprum", "Arial", serif;
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 30px;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+
 }
 
-.services-list li:nth-of-type(1) a {
-	padding-bottom: 7px;
-	box-shadow: 0px 1px 0 0 #ffffff, inset 0px 1px 0 0 #ffffff;
-	background-color: #ffffff;
-	color: #32425c;
-} 
+.interactive-block-controls label:hover {
+  box-shadow: 0px 1px 0 0 #ffffff, inset 0px 1px 0 0 #ffffff;
+  background-color: #ffffff;
+  color: #32425c;
+}
 
-.services-list li:nth-of-type(2) a {
-	padding-bottom: 7px;
-} 
 
-.services-list li:nth-of-type(3) a {
-	padding-bottom: 4px;
-	width: 217px;
-	height: 57px;
-} 
-
-.services-list a::after {
+.interactive-block-controls::after {
 	content: "";
 	width: 10px;
 	height: 279px;
@@ -1159,20 +1177,26 @@ ul.services-list {
 	background-image: url(../img/services-list-shadow.png);
 	background-repeat: no-repeat;
 	background-position: 0 0;
-	top: -45px;
-	right: 0px;
+	top: -46px;
+	left: 230px;
 }
 
-.services-list a:hover {
-	box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
-  background-color: #293449;
+.interactive-block-controls label:nth-of-type(1) {
+padding-bottom: 5px;
 }
 
-.active,
-.services-list a:active {
-	box-shadow: 0px 1px 0 0 #ffffff, inset 0px 1px 0 0 #ffffff;
-  background-color: #ffffff;
-  color: #32425c;
+.interactive-block-controls label:nth-of-type(2) {
+padding-bottom: 6px;
+}
+
+.interactive-block-controls label:nth-of-type(3) {
+padding-bottom: 4px;
+}
+
+.sider-inner {
+  overflow: hidden;
+    width: 830px;
+  height: 184px;
 }
 
 .services-description {
@@ -1180,7 +1204,31 @@ ul.services-list {
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: flex-start;
-	margin-left: 80px;
+  width: 830px;
+  height: 280px;
+  list-style: none;
+}
+
+ul.services-description {
+  padding: 0px;
+  margin: 0px;
+}
+
+.services-description li:nth-of-type(1) {
+  background-image: url(../img/interactive-block-delivery.png);
+  background-repeat: no-repeat;
+  background-position: 231px 21px;
+
+}
+
+.servises-slider-item {
+  width: 830px;
+  height: 330px;
+}
+
+.servises-slider-item p {
+  padding-left: 81px;
+  padding-bottom: 31px;
 }
 
 .services-description h2 {
@@ -1195,6 +1243,8 @@ ul.services-list {
 	font-style: normal;
 	font-stretch: normal;
 	letter-spacing: normal;
+  padding-top: 17px;
+  padding-left: 81px;
 }
 
 .bread-crumbs {
