@@ -1228,7 +1228,7 @@ ul.manufacturers-list {
   font-style: normal;
 }
 
-.interactive-block-controls label:hover {
+.interactive-block-controls label:hover, label.active-btn {
   box-shadow: 0px 1px 0 0 #ffffff, inset 0px 1px 0 0 #ffffff;
   background-color: #ffffff;
   color: #32425c;
@@ -1528,7 +1528,7 @@ ul.services-description {
 
 .results-min,
 .results-max {
-  height: 38px;
+  height: 34px;
   background-color: #f7f3ec;
   font-family: "PT Sans", "Arial", serif;
   font-size: 17px;
@@ -1557,7 +1557,7 @@ ul.services-description {
   height: 1px;
   display: block;
   position: absolute;
-  top: 20px;
+  top: 17px;
   left: 105px;
   background-color: #000000;
 }
@@ -1599,13 +1599,17 @@ ul.services-description {
 }
 
 .manufacturer input[type=checkbox] {
-  display: block;
-  position: relative;
-  width: 0px;
-  height: 0px;
+	position: absolute;
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0;
+	border:0;
+	height: 1px; 
+	width: 1px; 
+	overflow: hidden;
+  
 }
 
-.manufacturer input[type=checkbox]::before {
+.manufacturer label::before {
   content: "";
   display: block;
   position: absolute;
@@ -1615,10 +1619,10 @@ ul.services-description {
   background-repeat: no-repeat;
   background-position: 0 0;
   top: -2px;
-  left: 0px;
+  left: -35px;
 }
 
-.manufacturer input[type=checkbox]:checked::before {
+.manufacturer input[type=checkbox]:checked + label::before {
   content: "";
   display: block;
   position: absolute;
@@ -1628,59 +1632,59 @@ ul.services-description {
   background-repeat: no-repeat;
   background-position: 0 0;
   top: -2px;
-  left: 0px;
+  left: -35px;
 }
 
-.manufacturer input[type=checkbox]:hover::before,
-.manufacturer input[type=checkbox]:active::before {
-  background: url(../img/checkbox-off-hover.svg);
+.manufacturer label:hover::before,
+.manufacturer label:active::before {
+  background-image: url(../img/checkbox-off-hover.svg);
 }
 
-.manufacturer input[type=checkbox]:checked:hover::before,
-.manufacturer input[type=checkbox]:checked:active::before {
-  background: url(../img/checkbox-on-hover.svg);
+.manufacturer input[type=checkbox]:checked:hover + label::before,
+.manufacturer input[type=checkbox]:checked:active + label::before {
+  background-image: url(../img/checkbox-on-hover.svg);
 }
 
-.manufacturer input[type=checkbox]:nth-of-type(6)::before,
-.manufacturer input[type=checkbox]:nth-of-type(7)::before {
+.manufacturer label:nth-of-type(6)::before,
+.manufacturer label:nth-of-type(7)::before {
   content: "";
   display: block;
   position: absolute;
   width: 25px;
   height: 25px;
-  background: url(../img/radio-off.svg);
+  background-image: url(../img/radio-off.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
   top: -3px;
-  left: -1px;
+  left: -35px;
 }
 
-.manufacturer input[type=checkbox]:nth-of-type(6):checked::before,
-.manufacturer input[type=checkbox]:nth-of-type(7):checked::before {
+.manufacturer input[type=checkbox]:nth-of-type(6):checked + label::before,
+.manufacturer input[type=checkbox]:nth-of-type(7):checked + label::before {
   content: "";
   display: block;
   position: absolute;
   width: 25px;
   height: 25px;
-  background: url(../img/radio-on.svg);
+  background-image: url(../img/radio-on.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
   top: -3px;
-  left: -1px;
+  left: -35px;
 }
 
 .manufacturer input[type=checkbox]:nth-of-type(6):hover::before,
 .manufacturer input[type=checkbox]:nth-of-type(7):hover::before,
 .manufacturer input[type=checkbox]:nth-of-type(6):active::before,
 .manufacturer input[type=checkbox]:nth-of-type(7):active::before {
-  background: url(../img/radio-off-hover.svg);
+  background-image: url(../img/radio-off-hover.svg);
 }
 
-.manufacturer input[type=checkbox]:nth-of-type(6):checked:hover::before,
-.manufacturer input[type=checkbox]:nth-of-type(7):checked:hover::before,
-.manufacturer input[type=checkbox]:nth-of-type(6):checked:active::before,
-.manufacturer input[type=checkbox]:nth-of-type(7):checked:active::before {
-  background: url(../img/radio-on-hover.svg);
+.manufacturer input[type=checkbox]:nth-of-type(6):checked:hover + label::before,
+.manufacturer input[type=checkbox]:nth-of-type(7):checked:hover + label::before,
+.manufacturer input[type=checkbox]:nth-of-type(6):checked:active + label::before,
+.manufacturer input[type=checkbox]:nth-of-type(7):checked:active + label::before {
+  background-image: url(../img/radio-on-hover.svg);
 }
 
 .filters button[type="submit"] {
@@ -2404,8 +2408,8 @@ ul.goods-sections {
   color: #ffd180;
   background-color: #32425c;
   font-style: normal;
-  line-height: 18px;
-  font-size: 16px;
+  line-height: 24px;
+  font-size: 18px;
 }
 
 .footer-copyright {
